@@ -5,7 +5,6 @@ require_once __DIR__ . '/db.php';
 
 $message = '';
 
-// Handle adding a new recipe
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'add_recipe') {
     $title = trim($_POST['title'] ?? '');
     $subtitle = trim($_POST['subtitle'] ?? '');
@@ -28,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     }
 }
 
-// Handle search query
+// handle search query
 $search = trim($_GET['search'] ?? '');
 
 if (!empty($search)) {
@@ -40,7 +39,7 @@ if (!empty($search)) {
     $recipes = mysqli_fetch_all($result, MYSQLI_ASSOC);
     mysqli_stmt_close($stmt);
 } else {
-    // Fetch all recipes from the database
+    // fetch all recipes from the database
     $query = "SELECT * FROM recipes ORDER BY created_at DESC";
     $result = mysqli_query($db, $query);
     $recipes = mysqli_fetch_all($result, MYSQLI_ASSOC);
