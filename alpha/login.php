@@ -37,6 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+
+<!-- ai used -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>🔐 admin log-in</h1>
+    <h1>🔐 log-in</h1>
 
     <?php if (!empty($message)): ?>
         <div class="message-banner"><?= htmlspecialchars($message) ?></div>

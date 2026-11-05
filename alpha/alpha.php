@@ -60,7 +60,12 @@ if (!empty($search)) {
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>🌮📚🥞 Cookbook 🍩📖🧁</h1>
+    <header class="top-bar">
+        <h1>🌮📚🥞 Cookbook 🍩📖🧁</h1>
+        <div class="user-nav">
+            <a href="logout.php" class="btn-secondary" style="text-decoration: none;">🔒 Log Out</a>
+        </div>
+    </header>
 
     <?php if (!empty($message)): ?>
         <div class="message-banner"><?= htmlspecialchars($message) ?></div>
