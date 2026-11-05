@@ -1,10 +1,16 @@
 <?php
 declare(strict_types=1);
 
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+
 require_once __DIR__ . '/db.php';
 
 $message = '';
-
+ // used ai to set up the add recipe form and search functionality
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'add_recipe') {
     $title = trim($_POST['title'] ?? '');
     $subtitle = trim($_POST['subtitle'] ?? '');
@@ -60,7 +66,7 @@ if (!empty($search)) {
         <div class="message-banner"><?= htmlspecialchars($message) ?></div>
     <?php endif; ?>
 
-    <!-- search and add new recipe form -->
+    <!-- search and add new recipe form  - ai used -->
     <div class="controls-container">
         <form method="GET" action="alpha.php" class="search-form">
             <input type="text" name="search" placeholder="🔍 Search recipes by title, category..." value="<?= htmlspecialchars($search) ?>">
@@ -73,7 +79,7 @@ if (!empty($search)) {
         <button type="button" class="btn" onclick="toggleAddForm()"> + Add New Recipe</button>
     </div>
 
-    <!-- add recipe form -->
+    <!-- add recipe form - ai used -->
     <div id="add-recipe-modal" class="recipe-card" style="display: none; margin-top: 20px; width: auto;">
         <h3>✨ Add a New Recipe</h3>
         <form method="POST" action="alpha.php" class="add-form">

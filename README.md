@@ -23,3 +23,5 @@
 - used gemini to figure out which data file (used recipes) to import into SQL rather than just importing everything all at once
 
 - used gemini to figure out grid and how to use the php commands properly to create search and add new recipe bars
+
+- used gemini to create the login stuff/page
