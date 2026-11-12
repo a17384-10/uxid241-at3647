@@ -10,7 +10,8 @@ if (!isset($_SESSION['user_id'])) {
 require_once __DIR__ . '/db.php';
 
 $message = '';
- // used ai to set up the add recipe form and search functionality
+
+// Handle Add Recipe
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'add_recipe') {
     $title = trim($_POST['title'] ?? '');
     $subtitle = trim($_POST['subtitle'] ?? '');
@@ -19,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $description = trim($_POST['description'] ?? '');
     $image = trim($_POST['image'] ?? '');
 
-    if (!empty($title) && !empty($category) && !empty($description)) {
+    if (!empty($title) && !empty($category) && !empty($description) && $servings > 0) {
         $stmt = mysqli_prepare($db, "INSERT INTO recipes (title, subtitle, category, servings, description, image) VALUES (?, ?, ?, ?, ?, ?)");
         mysqli_stmt_bind_param($stmt, "sssiss", $title, $subtitle, $category, $servings, $description, $image);
         if (mysqli_stmt_execute($stmt)) {
@@ -29,23 +30,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         }
         mysqli_stmt_close($stmt);
     } else {
-        $message = "⚠️ Please fill in all required fields (Title, Category, Description).";
+        $message = "⚠️ Please fill in all required fields correctly.";
     }
 }
 
-// handle search query
+// Handle Delete Recipe
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'delete_recipe') {
+    $id = (int)($_POST['id'] ?? 0);
+    if ($id > 0) {
+        $stmt = mysqli_prepare($db, "DELETE FROM recipes WHERE id = ?");
+        mysqli_stmt_bind_param($stmt, "i", $id);
+        if (mysqli_stmt_execute($stmt)) {
+            $message = "🗑️ Recipe deleted successfully!";
+        } else {
+            $message = "❌ Error deleting recipe.";
+        }
+        mysqli_stmt_close($stmt);
+    }
+}
+
+// Handle Search Query
 $search = trim($_GET['search'] ?? '');
 
 if (!empty($search)) {
-    $searchTerm = "%" . $search . "%";
+    $search_term = "%" . $search . "%";
     $stmt = mysqli_prepare($db, "SELECT * FROM recipes WHERE title LIKE ? OR category LIKE ? OR description LIKE ? ORDER BY created_at DESC");
-    mysqli_stmt_bind_param($stmt, "sss", $searchTerm, $searchTerm, $searchTerm);
+    mysqli_stmt_bind_param($stmt, "sss", $search_term, $search_term, $search_term);
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
     $recipes = mysqli_fetch_all($result, MYSQLI_ASSOC);
     mysqli_stmt_close($stmt);
 } else {
-    // fetch all recipes from the database
     $query = "SELECT * FROM recipes ORDER BY created_at DESC";
     $result = mysqli_query($db, $query);
     $recipes = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -56,13 +71,14 @@ if (!empty($search)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alpha build</title>
+    <title>Cookbook Admin - Beta Build</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header class="top-bar">
-        <h1>🌮📚🥞 Cookbook 🍩📖🧁</h1>
+        <h1>🌮📚🥞 Cookbook Admin Area 🍩📖🧁</h1>
         <div class="user-nav">
+            <span>Welcome, <strong><?= htmlspecialchars($_SESSION['username'] ?? 'Admin') ?></strong></span>
             <a href="logout.php" class="btn-secondary" style="text-decoration: none;">🔒 Log Out</a>
         </div>
     </header>
@@ -71,7 +87,6 @@ if (!empty($search)) {
         <div class="message-banner"><?= htmlspecialchars($message) ?></div>
     <?php endif; ?>
 
-    <!-- search and add new recipe form  - ai used -->
     <div class="controls-container">
         <form method="GET" action="alpha.php" class="search-form">
             <input type="text" name="search" placeholder="🔍 Search recipes by title, category..." value="<?= htmlspecialchars($search) ?>">
@@ -81,10 +96,10 @@ if (!empty($search)) {
             <?php endif; ?>
         </form>
         
-        <button type="button" class="btn" onclick="toggleAddForm()"> + Add New Recipe</button>
+        <button type="button" class="btn" onclick="toggleAddForm()">+ Add New Recipe</button>
     </div>
 
-    <!-- add recipe form - ai used -->
+    <!-- Add Recipe Modal Form -->
     <div id="add-recipe-modal" class="recipe-card" style="display: none; margin-top: 20px; width: auto;">
         <h3>✨ Add a New Recipe</h3>
         <form method="POST" action="alpha.php" class="add-form">
@@ -116,7 +131,7 @@ if (!empty($search)) {
             </div>
 
             <div class="form-group">
-                <label>Image</label>
+                <label>Image URL</label>
                 <input type="text" name="image" placeholder="Link image here">
             </div>
 
@@ -126,12 +141,9 @@ if (!empty($search)) {
 
     <hr>
 
-    <!-- in case of error -->
     <?php if (empty($recipes)): ?>
-        <p>No recipes found</p>
+        <p>No recipes found.</p>
     <?php else: ?>
-        
-        <!-- recipes -->
         <p><em>Showing <?= count($recipes) ?> recipe(s)</em></p>
         
         <div class="recipe-grid">
@@ -156,9 +168,19 @@ if (!empty($search)) {
                         <?php endif; ?>
                     </div>
 
-                    <!-- description -->
                     <div class="recipe-description">
                         <p><?= htmlspecialchars($recipe['description']) ?></p>
+                    </div>
+
+                    <!-- Admin Action Buttons (Update & Delete) -->
+                    <div style="margin-top: 15px; display: flex; gap: 10px;">
+                        <a href="edit.php?id=<?= (int)$recipe['id'] ?>" class="btn-secondary" style="text-decoration: none; padding: 6px 12px; font-size: 0.85rem;">✏️ Edit</a>
+                        
+                        <form method="POST" action="alpha.php" onsubmit="return confirm('Are you sure you want to delete this recipe?');" style="display:inline;">
+                            <input type="hidden" name="action" value="delete_recipe">
+                            <input type="hidden" name="id" value="<?= (int)$recipe['id'] ?>">
+                            <button type="submit" class="btn" style="background: #ff3366; padding: 6px 12px; font-size: 0.85rem;">🗑️ Delete</button>
+                        </form>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -168,11 +190,7 @@ if (!empty($search)) {
     <script>
         function toggleAddForm() {
             const formCard = document.getElementById('add-recipe-modal');
-            if (formCard.style.display === 'none') {
-                formCard.style.display = 'block';
-            } else {
-                formCard.style.display = 'none';
-            }
+            formCard.style.display = (formCard.style.display === 'none') ? 'block' : 'none';
         }
     </script>
 </body>
