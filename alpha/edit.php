@@ -104,9 +104,19 @@ if (!$recipe) {
             </div>
 
             <div class="form-group">
-                <label>Description *</label>
-                <textarea name="description" rows="4" required><%= htmlspecialchars($recipe['description']) ?></textarea>
-            </div>
+                    <label>Description & Overview *</label>
+                    <textarea name="description" rows="3" required placeholder="Briefly describe the recipe..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Ingredients (One per line) *</label>
+                    <textarea name="ingredients_list" rows="4" required placeholder="1 cup flour&#10;2 eggs&#10;1 tsp salt"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Step-by-Step Instructions (One per line) *</label>
+                    <textarea name="steps_list" rows="5" required placeholder="Mix dry ingredients in a bowl.&#10;Whisk eggs and add to mixture.&#10;Bake at 350°F for 20 minutes."></textarea>
+                </div>
 
             <div class="form-group">
                 <label>Image URL</label>

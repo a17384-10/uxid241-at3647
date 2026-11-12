@@ -215,7 +215,6 @@ if (!empty($search)) {
         <div class="recipe-grid">
             <?php foreach ($recipes as $recipe): ?>
                 <div>
-                    <!-- Entire recipe card is fully clickable -->
                     <a href="recipe.php?id=<?= (int)$recipe['id'] ?>" class="recipe-card recipe-card-link" style="display: block; text-decoration: none; color: inherit;">
                         <div class="recipe-top-row">
                             <div class="recipe-info">
@@ -241,7 +240,6 @@ if (!empty($search)) {
                         </div>
                     </a>
 
-                    <!-- Admin Action Buttons (Kept separate so clicking Edit/Delete doesn't trigger card link) -->
                     <?php if (isset($_SESSION['user_id'])): ?>
                         <div style="margin-top: 10px; margin-bottom: 15px; display: flex; gap: 10px; position: relative; z-index: 2;">
                             <a href="edit.php?id=<?= (int)$recipe['id'] ?>" class="btn-secondary" style="text-decoration: none; padding: 6px 12px; font-size: 0.85rem;">✏️ Edit</a>
