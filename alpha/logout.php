@@ -5,7 +5,8 @@ session_start();
 $_SESSION = [];
 session_destroy();
 
-header('Location: login.php');
+// redirect back to public page
+header('Location: alpha.php');
 exit;
 
 // used ai for this whole page

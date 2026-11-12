@@ -8,6 +8,14 @@
 5. create a new database titled cookbook_db, then take the schema.sql file and import it under the import category
 6. create a config file and enter your credentials. ensure the config file is not publicly available
 7. open any web browser of your choice and type in: http://localhost/your-folder-name/alpha/alpha.php (or http://localhost:8889/your-folder-name/alpha/alpha.php depending on your MAMP port settings)
+8. username: admin
+9. password: password
+
+## Features built
+- CRUD: admins or logged in users can edit or add recipes
+- Authentication: session guards implemented, as well as hashes and password verification
+- Search feature: any user (logged in or not) is able to use this feature
+- Security: anything written is checked and filtered through htmlspecialchars
 
 ## AI USAGE
 - used Gemini to set up PHP and figure out the echo/message tool
@@ -27,3 +35,5 @@
 - used gemini to create the login stuff/page
 
 - used gemini to create a log out page
+
+- used gemini for help with building the pages and figuring out how to make the logged out or logged in page appear when appropriate

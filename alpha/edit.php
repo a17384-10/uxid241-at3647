@@ -2,72 +2,60 @@
 declare(strict_types=1);
 
 session_start();
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
 
 require_once __DIR__ . '/db.php';
 
 $message = '';
+$id = (int)($_GET['id'] ?? $_POST['id'] ?? 0);
 
-// Handle Add or Delete Actions (Protected: requires admin login)
+if ($id <= 0) {
+    header('Location: alpha.php');
+    exit;
+}
+
+// used ai for whole page
+
+// update submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (!isset($_SESSION['user_id'])) {
-        header('Location: login.php');
-        exit;
-    }
+    $title = trim($_POST['title'] ?? '');
+    $subtitle = trim($_POST['subtitle'] ?? '');
+    $category = trim($_POST['category'] ?? '');
+    $servings = (int)($_POST['servings'] ?? 1);
+    $description = trim($_POST['description'] ?? '');
+    $image = trim($_POST['image'] ?? '');
 
-    $action = $_POST['action'] ?? '';
-
-    if ($action === 'add_recipe') {
-        $title = trim($_POST['title'] ?? '');
-        $subtitle = trim($_POST['subtitle'] ?? '');
-        $category = trim($_POST['category'] ?? '');
-        $servings = (int)($_POST['servings'] ?? 1);
-        $description = trim($_POST['description'] ?? '');
-        $image = trim($_POST['image'] ?? '');
-
-        if (!empty($title) && !empty($category) && !empty($description) && $servings > 0) {
-            $stmt = mysqli_prepare($db, "INSERT INTO recipes (title, subtitle, category, servings, description, image) VALUES (?, ?, ?, ?, ?, ?)");
-            mysqli_stmt_bind_param($stmt, "sssiss", $title, $subtitle, $category, $servings, $description, $image);
-            if (mysqli_stmt_execute($stmt)) {
-                $message = "🎉 Recipe added successfully!";
-            } else {
-                $message = "❌ Error adding recipe.";
-            }
+    if (!empty($title) && !empty($category) && !empty($description) && $servings > 0) {
+        $stmt = mysqli_prepare($db, "UPDATE recipes SET title = ?, subtitle = ?, category = ?, servings = ?, description = ?, image = ? WHERE id = ?");
+        mysqli_stmt_bind_param($stmt, "sssissi", $title, $subtitle, $category, $servings, $description, $image, $id);
+        
+        if (mysqli_stmt_execute($stmt)) {
             mysqli_stmt_close($stmt);
+            header('Location: alpha.php');
+            exit;
         } else {
-            $message = "⚠️ Please fill in all required fields (Title, Category, Description).";
+            $message = "❌ Error updating recipe.";
         }
-    } 
-    
-    if ($action === 'delete_recipe') {
-        $id = (int)($_POST['id'] ?? 0);
-        if ($id > 0) {
-            $stmt = mysqli_prepare($db, "DELETE FROM recipes WHERE id = ?");
-            mysqli_stmt_bind_param($stmt, "i", $id);
-            if (mysqli_stmt_execute($stmt)) {
-                $message = "🗑️ Recipe deleted successfully!";
-            } else {
-                $message = "❌ Error deleting recipe.";
-            }
-            mysqli_stmt_close($stmt);
-        }
+        mysqli_stmt_close($stmt);
+    } else {
+        $message = "⚠️ Please fill in all required fields correctly.";
     }
 }
 
-// Handle search query (Publicly accessible)
-$search = trim($_GET['search'] ?? '');
+// fetch existing recipe data
+$stmt = mysqli_prepare($db, "SELECT * FROM recipes WHERE id = ?");
+mysqli_stmt_bind_param($stmt, "i", $id);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
+$recipe = mysqli_fetch_assoc($result);
+mysqli_stmt_close($stmt);
 
-if (!empty($search)) {
-    $search_term = "%" . $search . "%";
-    $stmt = mysqli_prepare($db, "SELECT * FROM recipes WHERE title LIKE ? OR category LIKE ? OR description LIKE ? ORDER BY created_at DESC");
-    mysqli_stmt_bind_param($stmt, "sss", $search_term, $search_term, $search_term);
-    mysqli_stmt_execute($stmt);
-    $result = mysqli_stmt_get_result($stmt);
-    $recipes = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    mysqli_stmt_close($stmt);
-} else {
-    $query = "SELECT * FROM recipes ORDER BY created_at DESC";
-    $result = mysqli_query($db, $query);
-    $recipes = mysqli_fetch_all($result, MYSQLI_ASSOC);
+if (!$recipe) {
+    header('Location: alpha.php');
+    exit;
 }
 ?>
 <!DOCTYPE html>
@@ -75,19 +63,14 @@ if (!empty($search)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookbook</title>
+    <title>Edit Recipe - Cookbook</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header class="top-bar">
-        <h1>🌮📚🥞 Cookbook 🍩📖🧁</h1>
+        <h1>✏️ Edit Recipe</h1>
         <div class="user-nav">
-            <?php if (isset($_SESSION['user_id'])): ?>
-                <span>Welcome, <strong><?= htmlspecialchars($_SESSION['username'] ?? 'Admin') ?></strong></span>
-                <a href="logout.php" class="btn-secondary" style="text-decoration: none;">🔒 Log Out</a>
-            <?php else: ?>
-                <a href="login.php" class="btn" style="text-decoration: none;">🔑 Admin Login</a>
-            <?php endif; ?>
+            <a href="alpha.php" class="btn-secondary" style="text-decoration: none;">← Back to Dashboard</a>
         </div>
     </header>
 
@@ -95,120 +78,43 @@ if (!empty($search)) {
         <div class="message-banner"><?= htmlspecialchars($message) ?></div>
     <?php endif; ?>
 
-    <!-- Search bar and optional Admin "Add Recipe" button -->
-    <div class="controls-container">
-        <form method="GET" action="alpha.php" class="search-form">
-            <input type="text" name="search" placeholder="🔍 Search recipes by title, category..." value="<?= htmlspecialchars($search) ?>">
-            <button type="submit" class="btn">Search</button>
-            <?php if (!empty($search)): ?>
-                <button type="button" class="btn-secondary" onclick="location.href='alpha.php'">Reset</button>
-            <?php endif; ?>
+    <div class="recipe-card" style="width: auto; max-width: 600px; margin: 20px auto;">
+        <h3>Editing: <?= htmlspecialchars($recipe['title']) ?></h3>
+        <form method="POST" action="edit.php?id=<?= $id ?>" class="add-form">
+            <input type="hidden" name="id" value="<?= $id ?>">
+            
+            <div class="form-group">
+                <label>Title *</label>
+                <input type="text" name="title" value="<?= htmlspecialchars($recipe['title']) ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label>Subtitle</label>
+                <input type="text" name="subtitle" value="<?= htmlspecialchars($recipe['subtitle'] ?? '') ?>">
+            </div>
+
+            <div class="form-group">
+                <label>Category *</label>
+                <input type="text" name="category" value="<?= htmlspecialchars($recipe['category']) ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label>Servings *</label>
+                <input type="number" name="servings" value="<?= (int)$recipe['servings'] ?>" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label>Description *</label>
+                <textarea name="description" rows="4" required><%= htmlspecialchars($recipe['description']) ?></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Image URL</label>
+                <input type="text" name="image" value="<?= htmlspecialchars($recipe['image'] ?? '') ?>">
+            </div>
+
+            <button type="submit" class="btn">💾 Update Recipe</button>
         </form>
-        
-        <?php if (isset($_SESSION['user_id'])): ?>
-            <button type="button" class="btn" onclick="toggleAddForm()">+ Add New Recipe</button>
-        <?php endif; ?>
     </div>
-
-    <!-- Add Recipe Modal Form (Admin Only) -->
-    <?php if (isset($_SESSION['user_id'])): ?>
-        <div id="add-recipe-modal" class="recipe-card" style="display: none; margin-top: 20px; width: auto;">
-            <h3>✨ Add a New Recipe</h3>
-            <form method="POST" action="alpha.php" class="add-form">
-                <input type="hidden" name="action" value="add_recipe">
-                
-                <div class="form-group">
-                    <label>Title *</label>
-                    <input type="text" name="title" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Subtitle</label>
-                    <input type="text" name="subtitle" placeholder="e.g., with Kale Rice & Roasted Carrots">
-                </div>
-
-                <div class="form-group">
-                    <label>Category *</label>
-                    <input type="text" name="category" placeholder="e.g., Chicken, Vegetarian, Beef">
-                </div>
-
-                <div class="form-group">
-                    <label>Servings *</label>
-                    <input type="number" name="servings" value="2" min="1" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Description *</label>
-                    <textarea name="description" rows="3" required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label>Image URL</label>
-                    <input type="text" name="image" placeholder="Link image here">
-                </div>
-
-                <button type="submit" class="btn">💾 Save Recipe</button>
-            </form>
-        </div>
-    <?php endif; ?>
-
-    <hr>
-
-    <?php if (empty($recipes)): ?>
-        <p>No recipes found.</p>
-    <?php else: ?>
-        <p><em>Showing <?= count($recipes) ?> recipe(s)</em></p>
-        
-        <div class="recipe-grid">
-            <?php foreach ($recipes as $recipe): ?>
-                <div class="recipe-card">
-                    <div class="recipe-top-row">
-                        <div class="recipe-info">
-                            <h3><?= htmlspecialchars($recipe['title']) ?></h3>
-                            
-                            <?php if (!empty($recipe['subtitle'])): ?>
-                                <div class="subtitle"><?= htmlspecialchars($recipe['subtitle']) ?></div>
-                            <?php endif; ?>
-                            
-                            <div class="meta">
-                                <span class="badge">Category: <?= htmlspecialchars($recipe['category']) ?></span> | 
-                                <strong>Servings:</strong> <?= htmlspecialchars((string)$recipe['servings']) ?>
-                            </div>
-                        </div>
-
-                        <?php if (!empty($recipe['image'])): ?>
-                            <img src="<?= htmlspecialchars($recipe['image']) ?>" alt="<?= htmlspecialchars($recipe['title']) ?>" class="recipe-img">
-                        <?php endif; ?>
-                    </div>
-
-                    <div class="recipe-description">
-                        <p><?= htmlspecialchars($recipe['description']) ?></p>
-                    </div>
-
-                    <!-- Admin Management Controls (Edit & Delete) -->
-                    <?php if (isset($_SESSION['user_id'])): ?>
-                        <div style="margin-top: 15px; display: flex; gap: 10px;">
-                            <a href="edit.php?id=<?= (int)$recipe['id'] ?>" class="btn-secondary" style="text-decoration: none; padding: 6px 12px; font-size: 0.85rem;">✏️ Edit</a>
-                            
-                            <form method="POST" action="alpha.php" onsubmit="return confirm('Are you sure you want to delete this recipe?');" style="display:inline;">
-                                <input type="hidden" name="action" value="delete_recipe">
-                                <input type="hidden" name="id" value="<?= (int)$recipe['id'] ?>">
-                                <button type="submit" class="btn" style="background: #ff3366; padding: 6px 12px; font-size: 0.85rem;">🗑️ Delete</button>
-                            </form>
-                        </div>
-                    <?php endif; ?>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    <?php endif; ?>
-
-    <?php if (isset($_SESSION['user_id'])): ?>
-        <script>
-            function toggleAddForm() {
-                const formCard = document.getElementById('add-recipe-modal');
-                formCard.style.display = (formCard.style.display === 'none') ? 'block' : 'none';
-            }
-        </script>
-    <?php endif; ?>
 </body>
 </html>
