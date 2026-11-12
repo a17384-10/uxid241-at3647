@@ -37,3 +37,5 @@
 - used gemini to create a log out page
 
 - used gemini for help with building the pages and figuring out how to make the logged out or logged in page appear when appropriate
+
+- used gemini to create the recipe.php page and have each recipe be clickable with instructions, steps, pictures, etc.
