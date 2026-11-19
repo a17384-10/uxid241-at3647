@@ -18,20 +18,64 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $category = trim($_POST['category'] ?? '');
     $servings = (int)($_POST['servings'] ?? 1);
     $description = trim($_POST['description'] ?? '');
-    $image = trim($_POST['image'] ?? '');
     $ingredients_input = trim($_POST['ingredients_list'] ?? '');
     $steps_input = trim($_POST['steps_list'] ?? '');
+    $image_path = '';
 
-    if (!empty($title) && !empty($category) && !empty($description) && !empty($ingredients_input) && !empty($steps_input) && $servings > 0) {
-        // uploads everything to the database and CSV files
+    // Handle Secure Image Upload
+    if (isset($_FILES['recipe_image']) && $_FILES['recipe_image']['error'] === UPLOAD_ERR_OK) {
+        $file_tmp = $_FILES['recipe_image']['tmp_name'];
+        $file_size = $_FILES['recipe_image']['size'];
+
+        // Limit file size to 5MB
+        if ($file_size > 5 * 1024 * 1024) {
+            $message = "⚠️ File is too large. Maximum size is 5MB.";
+        } else {
+            // Validate real MIME type using finfo (never trust client MIME type or name)
+            $finfo = finfo_open(FILEINFO_MIME_TYPE);
+            $mime_type = finfo_file($finfo, $file_tmp);
+            finfo_close($finfo);
+
+            $allowed_mimes = [
+                'image/jpeg' => 'jpg',
+                'image/png'  => 'png',
+                'image/webp' => 'webp'
+            ];
+
+            if (array_key_exists($mime_type, $allowed_mimes)) {
+                $ext = $allowed_mimes[$mime_type];
+                $upload_dir = __DIR__ . '/uploads/';
+                
+                // Ensure upload directory exists securely
+                if (!is_dir($upload_dir)) {
+                    mkdir($upload_dir, 0755, true);
+                }
+
+                // Generate unique filename to prevent collisions and path traversal
+                $new_filename = uniqid('recipe_', true) . '.' . $ext;
+                $destination = $upload_dir . $new_filename;
+
+                if (move_uploaded_file($file_tmp, $destination)) {
+                    $image_path = 'uploads/' . $new_filename;
+                } else {
+                    $message = "❌ Failed to move uploaded file.";
+                }
+            } else {
+                $message = "⚠️ Invalid file type. Only JPEG, PNG, and WebP images are allowed.";
+            }
+        }
+    }
+
+    if (empty($message) && !empty($title) && !empty($category) && !empty($description) && !empty($ingredients_input) && !empty($steps_input) && $servings > 0) {
+        // Uploads everything to the database using prepared statements
         $stmt = mysqli_prepare($db, "INSERT INTO recipes (title, subtitle, category, servings, description, image) VALUES (?, ?, ?, ?, ?, ?)");
-        mysqli_stmt_bind_param($stmt, "sssiss", $title, $subtitle, $category, $servings, $description, $image);
+        mysqli_stmt_bind_param($stmt, "sssiss", $title, $subtitle, $category, $servings, $description, $image_path);
         
         if (mysqli_stmt_execute($stmt)) {
             $new_recipe_id = mysqli_insert_id($db);
             mysqli_stmt_close($stmt);
 
-            // directs to the correct CSV file for ingredients
+            // Directs to the correct CSV file for ingredients
             $ing_file = __DIR__ . '/../data/recipes_data_ver8.xlsx - ingredients.csv';
             if (!file_exists($ing_file)) {
                 $ing_file = 'recipes_data_ver8.xlsx - ingredients.csv';
@@ -49,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             }
             fclose($fp);
 
-            // steps
+            // Steps CSV handling
             $step_file = __DIR__ . '/../data/recipes_data_ver8.xlsx - steps.csv';
             if (!file_exists($step_file)) {
                 $step_file = 'recipes_data_ver8.xlsx - steps.csv';
@@ -67,11 +111,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             }
             fclose($fp);
 
-            $message = "🎉 Recipe added successfully with all ingredients and steps!";
+            $message = "🎉 Recipe added successfully with image and details!";
         } else {
             $message = "❌ Error adding recipe to database.";
         }
-    } else {
+    } elseif (empty($message)) {
         $message = "⚠️ Please fill in all required fields, including ingredients and steps.";
     }
 }
@@ -152,11 +196,11 @@ if (!empty($search)) {
         <?php endif; ?>
     </div>
 
-    <!-- add recipe form -->
+    <!-- add recipe form with multipart/form-data -->
     <?php if (isset($_SESSION['user_id'])): ?>
         <div id="add-recipe-modal" class="recipe-card" style="display: none; margin: 20px auto; width: auto; max-width: 800px;">
             <h3 style="color: #ff2bb5; margin-top: 0;">✨ Add a New Recipe</h3>
-            <form method="POST" action="alpha.php" class="add-form">
+            <form method="POST" action="alpha.php" enctype="multipart/form-data" class="add-form">
                 <input type="hidden" name="action" value="add_recipe">
                 
                 <div class="form-group">
@@ -195,8 +239,8 @@ if (!empty($search)) {
                 </div>
 
                 <div class="form-group">
-                    <label>Image URL</label>
-                    <input type="text" name="image" placeholder="Link image here (e.g., images/folder/dish.jpg)">
+                    <label>Recipe Image Upload *</label>
+                    <input type="file" name="recipe_image" accept=".jpg, .jpeg, .png, .webp" required>
                 </div>
 
                 <button type="submit" class="btn">💾 Save Recipe</button>

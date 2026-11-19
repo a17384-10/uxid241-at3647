@@ -39,3 +39,5 @@
 - used gemini for help with building the pages and figuring out how to make the logged out or logged in page appear when appropriate
 
 - used gemini to create the recipe.php page and have each recipe be clickable with instructions, steps, pictures, etc.
+
+- used gemini to figure out image upload feature and to properly implement it into the image upload for the add recipe feature
