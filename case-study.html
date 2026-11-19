@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+    <link rel="stylesheet" href="alpha/main.css">
+    <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+    <div class="recipe-detail-container">
+        <!-- 1. Header & Main Image -->
+        <div class="recipe-header-row">
+            <div class="recipe-title-area">
+                <h2>Case Study</h2>
+                <div class="meta" style="margin-top: 10px;">
+                    <strong>Time taken to make:</strong> ten weeks
+                </div>
+            </div>
+            <img src="images-case/hero.png" alt="cookbook home page" class="recipe-main-img">
+        </div>
+
+        <!-- 2. Overview -->
+        <div class="recipe-overview-box">
+            <h3 class="section-title" style="margin-top: 0; border-bottom: none; padding-bottom: 0;">Overview</h3>
+            <p>
+                After looking throuhg a myriad of online cookbooks in search of inspiration for how to design this one, I found that I didn't actually like how they looked. They were usually pretty bland with simple colors, or no colors at all. They also didn't look super clear in terms of instructions, or there would be a picture of an ad/irrelevant things in between each step. Another thing was having to scroll too much to find the actual recipe and the ingredients, so I simplified eveyrthing so the user wouldn't have to waste time on getting to the recipe when they could have spent it getting started on it, and I did it with PHP and MySQL systems.
+            </p>
+            <p style="margin-bottom: 0;">
+                The final site has instant search, clean recipe steps, and built-in security to block bad files while protecting user data. It also allows for admins or authorized users to add, delete, or add recipes with a very simple form.
+            </p>
+        </div>
+
+        <!-- 3. context and challenge -->
+        <div class="case-section">
+            <h3 class="section-title">Context and Challenge</h3>
+            <p>
+                <strong>The Problem:</strong> Create a safe and secure recipe site that allows the user to get to what they need to rather quickly, rather than having to sift through irrelevant content or poorly designed interfaces.
+            </p>
+            <p>
+                <strong>My Goals:</strong>
+            </p>
+            <ul class="ingredients-card" style="list-style-type: disc; padding-left: 25px; margin-bottom: 25px;">
+                <li style="background: transparent; border: none; padding: 4px 0;">Allow users to search for recipes instantly by name, category, or keyword.</li>
+                <li style="background: transparent; border: none; padding: 4px 0;">Make the site look clean and easy to read.</li>
+                <li style="background: transparent; border: none; padding: 4px 0;">Give admins full control to add, edit, and delete recipes.</li>
+                <li style="background: transparent; border: none; padding: 4px 0;">Keep the database, user data, and image uploads safe and secure.</li>
+            </ul>
+        </div>
+
+        <!-- 4. process and insight -->
+        <div class="case-section">
+            <h3 class="section-title">Process and Insight</h3>
+            <p>
+                I started by creating a database structure to store all the recipe details and login info. Then, with the help of AI, I used a matching color theme with pinks and blues so it stands out a little from other cookbooks while making it my own.
+            </p>
+            <div class="ingredients-grid-img" style="margin: 20px 0;">
+                <img src="images-case/schema.png" alt="Database schema diagram showing recipes and users tables" style="max-width: 100%; border-radius: 12px; border: 3px solid #62eaff;">
+                <p style="font-size: 0.9rem; color: #04868f; margin-top: 8px;"><em>The database.</em></p>
+            </div>
+            <p>
+                A major server-side decision was how to handle recipe image uploads securely. Instead of trusting client filenames or browser-supplied MIME types, the code uses PHP's <code>finfo</code> extension in <code>alpha.php</code> and <code>edit.php</code> to inspect the real binary file type. This ensures only valid images (JPEG, PNG, WebP) are stored and prevents malicious script execution.
+            </p>
+            <div style="background: #1e293b; color: #f8fafc; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 0.88rem; margin: 15px 0; overflow-x: auto;">
+                $finfo = finfo_open(FILEINFO_MIME_TYPE);<br>
+                $mime_type = finfo_file($finfo, $file_tmp);<br>
+                finfo_close($finfo);<br>
+                $allowed_mimes = ['image/jpeg' => 'jpg', 'image/png' => 'png', 'image/webp' => 'webp'];
+            </div>
+            <p style="font-size: 0.9rem; color: #04868f; margin-top: 8px; text-align: center;"><em>The quoted code.</em></p>
+        </div>
+
+        <!-- 5. Solution -->
+        <div class="case-section">
+            <h3 class="section-title">Solution</h3>
+            <p>
+                The finished website has three main parts:
+            </p>
+            <p>
+                <strong>1. The Homepage:</strong> Shows all recipes in a grid with a search bar that filters dishes by category or keyword.
+            </p>
+            <div class="ingredients-grid-img" style="margin: 20px 0;">
+                <img src="images-case/cookbook-page.png" alt="home page when logged out" style="max-width: 100%; border-radius: 12px; border: 3px solid #62eaff;">
+                <p style="font-size: 0.9rem; color: #04868f; margin-top: 8px;"><em>Homepage when logged out (see hero for reference of the admin page).</em></p>
+            </div>
+
+            <p>
+                <strong>2. The Recipe Page:</strong> Each recipe page shows ingredients and numbered steps for cooking.
+            </p>
+            <div class="ingredients-grid-img" style="margin: 20px 0;">
+                <img src="images-case/recipe-page.png" alt="recipe page" style="max-width: 100%; border-radius: 12px; border: 3px solid #62eaff;">
+                <p style="font-size: 0.9rem; color: #04868f; margin-top: 8px;"><em>Recipe page for instructions.</em></p>
+            </div>
+
+            <p>
+                <strong>3. The Admin Tools:</strong> Allows admins and authorized users to add, edit, or delete recipes and upload pictures.
+            </p>
+            <div class="ingredients-grid-img" style="margin: 20px 0;">
+                <img src="images-case/login-page.png" alt="login page" style="max-width: 100%; border-radius: 12px; border: 3px solid #62eaff;">
+                <p style="font-size: 0.9rem; color: #04868f; margin-top: 8px;"><em>Login page for accessing admin controls.</em></p>
+            </div>
+
+            <div class="ingredients-grid-img" style="margin: 20px 0;">
+                <img src="images-case/add-recipe.png" alt="add new recipe form" style="max-width: 100%; border-radius: 12px; border: 3px solid #62eaff;">
+                <p style="font-size: 0.9rem; color: #04868f; margin-top: 8px;"><em>Add new recipe form for logged in users.</em></p>
+            </div>
+        </div>
+
+        <!-- 6. Results -->
+        <div class="case-section">
+            <h3 class="section-title">Results</h3>
+            <p>
+                I think I was able to meet each goal.
+                <li>The search feature works regardless of whether the user is logged in or not, and they are able to search by category or key word.</li>
+                <li>The site is easy to read, and it looks nice.</li>
+                <li>Admins and authorized users are able to add, edit, and delete recipes.</li>
+                <li>All user data and image uploads are safe and secure.</li>
+            </p>
+            <p>
+                If I build another version in the future, I would store all the ingredient lists directly in the database instead of CSV files to make updating data even smoother. I would also spend more time on the design and layout to make it even more visually appealing and user-friendly while still making it unique and my own
+            </p>
+        </div>
+    </div>
+</body>
+</html>
