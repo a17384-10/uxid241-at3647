@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Oct 22, 2026 at 04:28 PM
+-- Generation Time: Nov 19, 2026 at 09:52 PM
 -- Server version: 8.0.44
 -- PHP Version: 8.3.30
 
@@ -11,17 +11,9 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Database: `cookbook_db`
 --
-CREATE DATABASE IF NOT EXISTS `cookbook_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `cookbook_db`;
 
 -- --------------------------------------------------------
 
@@ -31,25 +23,61 @@ USE `cookbook_db`;
 
 CREATE TABLE `recipes` (
   `id` int UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `subtitle` varchar(255) DEFAULT NULL,
-  `category` varchar(100) NOT NULL,
+  `title` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `subtitle` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `category` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `servings` int UNSIGNED NOT NULL,
-  `description` text NOT NULL,
-  `image` varchar(255) DEFAULT NULL,
+  `description` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `image` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `recipes`
 --
 
 INSERT INTO `recipes` (`id`, `title`, `subtitle`, `category`, `servings`, `description`, `image`, `created_at`) VALUES
-(1, 'Ancho-Orange Chicken', 'with Kale Rice & Roasted Carrots', 'Chicken', 4, 'We\'re amping up chicken breasts with a glaze of smoky ancho chile paste and fresh orange juice in this recipe. On the side, roasted carrots and lightly creamy, golden raisin-studded rice perfectly accent the sweetness of the glaze.', '../images-renamed/ancho-orange-chicken/dish.jpg', '2026-10-21 15:56:05'),
-(2, 'Beef Medallions & Mushroom Sauce', 'with Mashed Potatoes', 'Beef', 2, 'In this easy recipe, inspired by steak Diane (an American restaurant classic), we\'re searing beef medallions, then using the fond in the pan to make a rich, bright mushroom sauce for spooning on top. Garlic mashed potatoes and sautéed kale make for delicious, simple sides.', '../images-renamed/beef-medallions-mushroom-sauce/dish.jpg', '2026-10-21 15:56:05'),
-(3, 'Broccoli & Basil Pesto Sandwiches', 'with Romaine & Citrus Salad', 'Vegetarian', 4, 'These Italian focaccia sandwiches are layered with broccoli, three cheeses, and a savory basil, cashew, and pine nut pesto, then baked in the oven to meld all the bright, aromatic flavors. On the side, we\'re serving a refreshing salad of romaine and seasonal clementine, dressed in a creamy dressing made with fresh clementine juice.', '../images-renamed/broccoli-basil-pesto-sandwiches/dish.jpg', '2026-10-21 15:56:05'),
-(4, 'Broccoli & Mozzarella Calzones', 'with Caesar Salad', 'Vegetarian', 4, 'These calzones are loaded with melty fresh mozzarella, creamy ricotta, and tender broccoli—balanced by a tangy tomato dipping sauce. For a refreshing side, we\'re tossing crunchy romaine and briny black olives in our take on Caesar dressing.', '../images-renamed/broccoli-mozzarella-calzones/dish.jpg', '2026-10-21 15:56:05'),
-(5, 'Bucatini Alfredo', 'with Broccoli', 'Vegetarian', 2, 'This quick-cooking recipe captures all the deliciously creamy, rich flavor of the classic Italian-American sauce—with the welcome addition of quick-braised broccoli. A dusting of pecorino cheese completes each bowl with a touch of sharpness.', '../images-renamed/bucatini-alfredo/dish.jpg', '2026-10-21 15:56:05');
+(1, 'Ancho-Orange Chicken', 'with Kale Rice & Roasted Carrots', 'Chicken', 4, 'We\'re amping up chicken breasts with a glaze of smoky ancho chile paste and fresh orange juice in this recipe. On the side, roasted carrots and lightly creamy, golden raisin-studded rice perfectly accent the sweetness of the glaze.', '../images-renamed/ancho-orange-chicken/dish.jpg', '2026-10-29 17:39:05'),
+(2, 'Beef Medallions & Mushroom Sauce', 'with Mashed Potatoes', 'Beef', 2, 'In this easy recipe, inspired by steak Diane (an American restaurant classic), we\'re searing beef medallions, then using the fond in the pan to make a rich, bright mushroom sauce for spooning on top. Garlic mashed potatoes and sautéed kale make for delicious, simple sides.', '../images-renamed/beef-medallions-mushroom-sauce/dish.jpg', '2026-10-29 17:39:05'),
+(3, 'Broccoli & Basil Pesto Sandwiches', 'with Romaine & Citrus Salad', 'Vegetarian', 4, 'These Italian focaccia sandwiches are layered with broccoli, three cheeses, and a savory basil, cashew, and pine nut pesto, then baked in the oven to meld all the bright, aromatic flavors. On the side, we\'re serving a refreshing salad of romaine and seasonal clementine, dressed in a creamy dressing made with fresh clementine juice.', '../images-renamed/broccoli-basil-pesto-sandwiches/dish.jpg', '2026-10-29 17:39:05'),
+(4, 'Broccoli & Mozzarella Calzones', 'with Caesar Salad', 'Vegetarian', 4, 'These calzones are loaded with melty fresh mozzarella, creamy ricotta, and tender broccoli—balanced by a tangy tomato dipping sauce. For a refreshing side, we\'re tossing crunchy romaine and briny black olives in our take on Caesar dressing.', '../images-renamed/broccoli-mozzarella-calzones/dish.jpg', '2026-10-29 17:39:05'),
+(5, 'Bucatini Alfredo', 'with Broccoli', 'Vegetarian', 2, 'This quick-cooking recipe captures all the deliciously creamy, rich flavor of the classic Italian-American sauce—with the welcome addition of quick-braised broccoli. A dusting of pecorino cheese completes each bowl with a touch of sharpness.', '../images-renamed/bucatini-alfredo/dish.jpg', '2026-10-29 17:39:05'),
+(6, 'Bucatini & Tomato Sauce', 'with Roasted Broccoli', 'Vegetarian', 2, 'Made with petite datterini tomatoes, the sauce for tonight\'s bucatini highlights briny olives and capers, hot red pepper flakes, and savory Grana Padano cheese. We\'re mixing in roasted broccoli for contrasting texture and nutty-sweet flavor.', '../images-renamed/bucatini-tomato-sauce/dish.jpg', '2026-10-29 17:39:05'),
+(7, 'Cheesy Enchiladas Rojas', 'with Mushrooms & Kale', 'Vegetarian', 4, 'Our hearty vegetarian enchiladas are filled with a combination of fragrant, Mexican-spiced rice and sautéed mushrooms and kale. For even more flavor, we\'re baking them under a smoky-sweet tomato sauce flavored with ancho chile paste and a layer of melty white cheddar. A dollop of lime-seasoned sour cream adds creamy, cooling balance. (You may receive green curly, dark green lacinato, or red kale.)', '../images-renamed/cheesy-enchiladas-rojas/dish.jpg', '2026-10-29 17:39:05'),
+(8, 'Crispy Fish Sandwiches', 'with Tartar Sauce & Roasted Sweet Potato Wedges', 'Fish & Seafood', 4, 'These sandwiches highlight wild Alaskan pollock—flavored with aromatic seasonings, coated with panko breadcrumbs, and pan-fried for a golden-brown crust. In classic fashion, a tangy, mayo-based tartar sauce perfectly balances the fish.', '../images-renamed/crispy-fish-sandwiches/dish.jpg', '2026-10-29 17:39:05'),
+(9, 'General Tso\'s Chicken', 'with Bok Choy & Jasmine Rice', 'Chicken', 2, 'In this quick-cooking spin on a takeout favorite, hoisin sauce, honey, sriracha, and sesame oil lend our chicken the sweet, spicy, and nutty flavors General Tso\'s is known for. A light dusting of cornstarch on the chicken just before it hits the pan creates a delicately crispy exterior (and helps it soak up the irresistible sauce later).', '../images-renamed/general-tsos-chicken/dish.jpg', '2026-10-29 17:39:05'),
+(10, 'Hoisin-Glazed Pork Chops', 'with Stir-Fried Vegetables & Wonton Noodles', 'Pork', 4, 'Delightfully chewy wonton noodles tossed in a nutty, savory sauce are a delicious accompaniment to these pork chops. For depth of flavor, we\'re pan-searing the pork chops, then glazing them with barbecue-like hoisin, whose sweetness perfectly matches bites of sautéed carrots in the noodles.', '../images-renamed/hoisin-glazed-pork-chops/dish.jpg', '2026-10-29 17:39:05'),
+(11, 'Honey-Butter Barramundi', 'with Za\'atar Roasted Vegetables', 'Fish & Seafood', 4, 'This Middle Eastern recipe pairs crispy barramundi—served in a family-friendly pan sauce of honey and butter—with a medley of winter vegetables. For savory, herby flavor, we\'re seasoning the vegetables with za\'atar before roasting them.', '../images-renamed/honey-butter-barramundi/dish.jpg', '2026-10-29 17:39:05'),
+(12, 'Kale & Ricotta Quiche', 'with Romaine, Apple, & Almond Salad', 'Vegetarian', 4, 'This crowd-pleasing quiche showcases a rich, eggy filling made with ricotta and cream —balanced by hearty sautéed kale. On the side, we\'re serving a refreshing salad of crisp romaine and apple, wrapped in a creamy lemon dressing.', '../images-renamed/kale-ricotta-quiche/dish.jpg', '2026-10-29 17:39:05'),
+(13, 'Mexican-Spiced Barramundi', 'with Kale, Sweet Potato, & Avocado Salad', 'Fish & Seafood', 2, 'This recipe has been approved by Whole30®. To learn more about their guidelines, visit Whole30.com. We\'re partnering with Whole30® to bring you the first of eight weeks of delicious recipes. Zesty spiced barramundi is the perfect partner for a salad of roasted sweet potato and kale, marinated in a creamy avocado and citrus dressing to soften the leaves.', '../images-renamed/mexican-spiced-barramundi/dish.jpg', '2026-10-29 17:39:05'),
+(14, 'Mushroom & Potato Tacos', 'with Romaine & Orange Salad', 'Vegetarian', 2, 'For this hearty vegetarian meal, we\'re filling soft flour tortillas with mushrooms and potato—seasoned with a zesty, chorizo-inspired blend, then roasted. A pickled pepper relish lends bright flavor to the tacos, all tied together with a creamy sauce seasoned with the same spices. Our side salad of juicy orange and crunchy romaine rounds out the dish.', '../images-renamed/mushroom-potato-tacos/dish.jpg', '2026-10-29 17:39:05'),
+(15, 'Parmesan-Crusted Chicken', 'with Mashed Sweet Potatoes & Roasted Broccoli', 'Chicken', 4, 'In this simple, seasonal recipe, you\'ll coat chicken in a combination of flour, parmesan cheese, and savory spices before pan-searing it. We\'re adding more of the same spices to a bright, creamy sauce, perfect for spooning over the chicken and broccoli.', '../images-renamed/parmesan-crusted-chicken/dish.jpg', '2026-10-29 17:39:05'),
+(16, 'Pimento Cheeseburgers', 'with Sweet Potato Oven Fries', 'Beef', 2, 'Tonight, the classic cheeseburger gets an easy, Southern-style lift from pimento cheese —a zesty spread made with cheddar, mayo, pickled peppers, and spices. We\'re serving our burgers with sweet potato oven fries for a flavorful, seasonal twist on the usual side.', '../images-renamed/pimento-cheeseburgers/dish.jpg', '2026-10-29 17:39:05'),
+(17, 'Pork Chorizo Tacos', 'with Cheesy Roasted Potatoes', 'Pork', 2, 'These tacos get plenty of bold flavor from ground chorizo (a type of spiced pork sausage), cooked into a delightfully saucy filling with cabbage and fresh citrus juices. On the side, we\'re livening up roasted potatoes with garlic and Cotija cheese.', '../images-renamed/pork-chorizo-tacos/dish.jpg', '2026-10-29 17:39:05'),
+(18, 'Roasted Broccoli & Fregola Sarda Salad', 'with Hard-Boiled Eggs & Tahini Dressing', 'Vegetarian', 2, 'This Middle Eastern-inspired recipe is brimming with varied flavors and textures. Toasty pearls of pasta, roasted vegetables (seasoned with savory, herby za\'atar), crumbled cheese, and chopped almonds all come together in a smooth, nutty dressing.', '../images-renamed/roasted-broccoli-fregola-sarda-salad/dish.jpg', '2026-10-29 17:39:05'),
+(19, 'Roasted Brussels Sprout & Freekeh Salad', 'with Lemon Yogurt & Barrel-Aged Feta', 'Vegetarian', 2, 'This Mediterranean-inspired grain salad is brimming with varied, vibrant flavors. Nutty freekeh and roasted Brussels sprouts get pops of sweetness from pickled peppers and dates, balanced by briny crumbled Feta. To dollop on top, we\'re serving lemon-seasoned yogurt for extra brightness.', '../images-renamed/roasted-brussels-sprout-freekeh-salad/dish.jpg', '2026-10-29 17:39:05'),
+(20, 'Roasted Cauliflower Salad', 'with Caper Brown Butter & Parmesan Breadcrumbs', 'Vegetarian', 2, 'Seasonal salads don\'t get much more satisfying than this. We\'re bringing roasted cauliflower and sautéed kale together with cheesy toasted breadcrumbs and a briny caper-studded dressing. Served on top, soft-boiled eggs add extra richness.', '../images-renamed/roasted-cauliflower-salad/dish.jpg', '2026-10-29 17:39:05'),
+(21, 'Roasted Chicken & Fall Vegetables', 'with Cranberry & Ginger Compote', 'Chicken', 4, 'For this comforting autumn dinner, we\'re seasoning half chickens with the classic flavors of garlic, onion, and smoked paprika, then roasting them along with sweet potatoes and Brussels sprouts. The rich chicken finds delicious contrast in a tart-sweet compote, made simply by cooking fresh cranberries and ginger with a bit of sugar and water.', '../images-renamed/roasted-chicken-fall-vegetables/dish.jpg', '2026-10-29 17:39:05'),
+(22, 'Roasted Pork & Broccoli', 'with Apple, Cheese Sauce, & Garlic Breadcrumbs', 'Pork', 2, 'To elevate the classic savory-sweet pairing, we\'re topping roasted pork with sautéed apple in this crowd-pleasing recipe. The pork and a side of broccoli, roasted on the same sheet pan, come together with a rich, warming fontina cheese sauce.', '../images-renamed/roasted-pork-broccoli/dish.jpg', '2026-10-29 17:39:05'),
+(23, 'Roasted Red Pepper Pasta', 'with Lemon-Parmesan Broccoli', 'Vegetarian', 2, 'In this quick-cooking recipe, whole grain pipe rigate gets pops of flavor from sweet roasted piquillo peppers and briny capers—plus a layer of exciting crunch from almonds. It all comes together in a creamy, mildly spicy sauce.', '../images-renamed/roasted-red-pepper-pasta/dish.jpg', '2026-10-29 17:39:05'),
+(24, 'Roasted Squash Curry', 'with Crispy Mung Beans & Jasmine Rice', 'Vegetarian', 2, 'In this recipe, veggie curry gets a unique lift from spaghetti squash—oven-roasted, then broken into pasta-like strands with a fork. We\'re finishing our squash and bok choy in a sauce made with fresh aromatics and two well-balanced pantry ingredients: spicy yellow curry paste and cooling coconut milk. A garnish of dried mung beans brings it all together with exciting crunch.', '../images-renamed/roasted-squash-curry/dish.jpg', '2026-10-29 17:39:05'),
+(25, 'Roasted Turkey Breast & Farro-Endive Salad', 'with Brown Butter Apple Compote', 'Turkey', 2, 'Fall comfort food gets a delicious lift in this recipe. A sweet, toasty compote (simply apple and shallot cooked in brown butter) balances our savory roasted turkey breast. On the side, we\'re tossing warm grains with endive—first cooked with a bit of honey and lemon to brighten its mildly bitter flavor.', '../images-renamed/roasted-turkey-breast-farro-endive-salad/dish.jpg', '2026-10-29 17:39:05'),
+(26, 'Salmon & Honey-Glazed Carrots', 'with Lemon-Saffron Yogurt Sauce', 'Fish & Seafood', 2, 'This elegant dish gets unique flavor from a prized spice, saffron, used two ways: added to the water used to boil the potatoes and stirred into a creamy yogurt sauce. The bright sauce is delicious spooned over rich salmon, potatoes, and carrots—which get another flavor-packed lift from a glaze of honey and fragrant cumin. Aleppo pepper adds just a hint of spice throughout the dish, balanced by cooling fresh mint.', '../images-renamed/salmon-honey-glazed-carrots/dish.jpg', '2026-10-29 17:39:05'),
+(27, 'Seared Chicken & Mashed Potatoes', 'with Maple-Glazed Carrots', 'Chicken', 2, 'We\'re giving seared chicken a lift with a rich pan sauce, made with sweet maple syrup and tangy sherry vinegar. It\'s the perfect accompaniment for creamy mashed potatoes and roasted carrots, dressed with a bit more maple syrup.', '../images-renamed/seared-chicken-mashed-potatoes/dish.jpg', '2026-10-29 17:39:05'),
+(28, 'Seared Steaks & Garlic Butter', 'with Oven Fries', 'Beef', 4, '\"Steak frites,\" or steak with french fries, is classic French bistro fare. Tonight\'s steaks get another layer of rich flavor from garlic butter, spooned over them as they cook. Creamy mustard sauce is a perfect match for the rich steaks and hearty oven-roasted fries, while a simple salad adds refreshing contrast. (You may receive crisp romaine or tender butter lettuce.)', '../images-renamed/seared-steaks-garlic-butter/dish.jpg', '2026-10-29 17:39:05'),
+(29, 'Shiitake & Hoisin Beef Burgers', 'with Miso Mayonnaise & Roasted Sweet Potatoes', 'Beef', 4, 'These Asian-inspired burgers get their irresistible umami flavor from chopped shiitake mushrooms (mixed right into the beef) and a miso-mayo spread. Piled on top, crisp ribbons of bok choy round out the burgers, served with a side of roasted sweet potato wedges.', '../images-renamed/shiitake-hoisin-beef-burgers/dish.jpg', '2026-10-29 17:39:05'),
+(30, 'Shrimp Fra Diavolo', 'with Lumaca Rigata Pasta', 'Fish & Seafood', 2, 'Tonight\'s variation on the beloved Italian-American dish gets its \"devilish\" heat from Calabrian chile paste, mixed into a tangy-sweet tomato sauce. It perfectly coats shrimp, cabbage, and lumaca rigata pasta. A garnish of sliced almonds finishes the dish with contrasting crunch.', '../images-renamed/shrimp-fra-diavolo/dish.jpg', '2026-10-29 17:39:05'),
+(31, 'Smoked Gouda & Mushroom Flatbread', 'with Endive & Apple Salad', 'Vegetarian', 2, 'For this rustic seasonal meal, we\'re topping flatbread—made by rolling out pizza dough until extra-thin—with two kinds of cheeses, including nutty smoked Gouda. Cremini mushrooms add even more irresistibly savory flavor to the flatbread, balanced by a bright, crisp endive and apple salad.', '../images-renamed/smoked-gouda-mushroom-flatbread/dish.jpg', '2026-10-29 17:39:05'),
+(32, 'Spicy Chicken Quesadillas', 'with Beet & Orange Salad', 'Chicken', 2, 'A seasonal salad of striped Chioggia beet, juicy orange, and peanuts is a fresh pairing for these zesty quesadillas. We\'re seasoning the chicken filling with both jalapeño pepper and Mexican spices—balanced by a layer of melty white cheddar. Mexican crema brightened up with lime juice is perfect for dipping.', '../images-renamed/spicy-chicken-quesadillas/dish.jpg', '2026-10-29 17:39:05'),
+(33, 'Spicy Pork & Korean Rice Cakes', 'with Bok Choy', 'Pork', 4, 'In this crowd-pleasing recipe, a savory and spicy sauce (balanced by a touch of cooling crème fraîche) brings together ground pork, bok choy, and aromatics. We\'re mixing in delightfully chewy tteok, or rice cakes—a staple of Korean cuisine.', '../images-renamed/spicy-pork-korean-rice-cakes/dish.jpg', '2026-10-29 17:39:05'),
+(34, 'Sweet & Sour Vegetable Stir-Fry', 'with Fried Eggs & Peanuts', 'Vegetarian', 2, 'Two kinds of citrus—seasonal orange and lemon—give the sauce for our stir-fried vegetables its irresistible sweet-sour balance. The carrots, celery, and bok choy perfectly contrast a rich fried egg and fluffy, radish-studded white rice.', '../images-renamed/sweet-sour-vegetable-stir-fry/dish.jpg', '2026-10-29 17:39:05'),
+(35, 'Thai Curry Chicken', 'with Carrots & Bok Choy', 'Chicken', 2, 'In tonight\'s dish, the spicy and aromatic flavors of yellow curry paste—a Thai staple— shine through a lightly sweet coconut milk broth. Sautéed chicken, carrots, and bok choy give the curry plenty of hearty texture, while fluffy rice eagerly soaks up all the complex flavors. (Chefs, this curry paste packs a punch of heat, so be sure to use only as much as you\'d like!)', '../images-renamed/thai-curry-chicken/dish.jpg', '2026-10-29 17:39:05'),
+(36, 'Tilapia & Black Lentil Salad', 'with Lemon Pan Sauce', 'Fish & Seafood', 2, 'In this dish, we\'re putting a twist on Italian gremolata: adding pickled peppers to the classic parsley, garlic, and lemon condiment. The bright, tangy flavors perk up a hearty salad of black lentils and roasted broccoli. We\'re also using lemon juice as the base for an easy pan sauce to serve over our seared tilapia.', '../images-renamed/tilapia-black-lentil-salad/dish.jpg', '2026-10-29 17:39:05'),
+(37, 'Togarashi Chicken Lettuce Cups', 'with Orange & Radishes', 'Chicken', 2, 'This recipe has been approved by Whole30®. To learn more about their guidelines, visit Whole30.com. We\'re partnering with Whole30® to bring you the first of eight weeks of delicious recipes. These chicken lettuce cups get their dynamic flavor from togarashi seasoning—a staple of Japanese cuisine. Juicy bites of orange add more bright flavor and color.', '../images-renamed/togarashi-chicken-lettuce-cups/dish.jpg', '2026-10-29 17:39:05'),
+(38, 'Top Chef Ginger-Marinated Grassfed Steaks', 'with Stir-Fried Vegetables & Jasmine Rice', 'Beef', 2, 'In this recipe—inspired by our Quickfire Challenge from Top Chef Season 15 on Bravo—we\'re marinating grassfed steaks in fresh ginger, soy sauce, and citrusy ponzu sauce. The extra marinade transforms into an easy pan sauce, which adds punchy flavor to the steaks and a side of jasmine rice.', '../images-renamed/top-chef-ginger-marinated-grassfed-steaks/dish.jpg', '2026-10-29 17:39:05'),
+(39, 'Top Chef Seared Grassfed Steaks', 'with Sweet Chili-Glazed Vegetables', 'Beef', 4, 'In this recipe, inspired by our Quickfire Challenge from Top Chef Season 15 on Bravo, simple grassfed steaks and rice get a sweet, tart, and spicy lift from glazed mushrooms and bok choy. Sliced radishes, softened a bit with lime juice, finish the dish off with subtle crunch.', '../images-renamed/top-chef-seared-grassfed-steaks/dish.jpg', '2026-10-29 17:39:05'),
+(40, 'Tuscan Chicken & Green Lentil Stew', 'with Goat Cheese', 'Chicken', 2, 'In this comforting cold-weather recipe, we\'re serving Tuscan-spiced chicken over tender green lentils and vegetables cooked in a light, savory tomato broth. Capers and crushed red pepper add briny flavor and a touch of heat to cut through the rich, earthy stew. (Chefs, rinsing the lentils after cooking removes excess starch, resulting in a more delicate flavor.)', '../images-renamed/tuscan-chicken-green-lentil-stew/dish.jpg', '2026-10-29 17:39:05'),
+(41, 'fetty wap', '1738', 'test', 4, 'in the club cooking pies with my baby', 'uploads/recipe_6aff5a8e6a77c5.05669001.jpg', '2026-11-19 20:22:38');
 
 -- --------------------------------------------------------
 
@@ -59,19 +87,19 @@ INSERT INTO `recipes` (`id`, `title`, `subtitle`, `category`, `servings`, `descr
 
 CREATE TABLE `recipes_data_ver8_xlsx___recipes` (
   `recipe_id` int DEFAULT NULL,
-  `slug` varchar(41) DEFAULT NULL,
-  `title` varchar(42) DEFAULT NULL,
-  `subtitle` varchar(47) DEFAULT NULL,
-  `category` varchar(14) DEFAULT NULL,
+  `slug` varchar(41) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `title` varchar(42) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `subtitle` varchar(47) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `category` varchar(14) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   `servings` int DEFAULT NULL,
-  `description` varchar(416) DEFAULT NULL,
+  `description` varchar(416) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   `ingredient_count` int DEFAULT NULL,
   `step_count` int DEFAULT NULL,
-  `main_image` varchar(57) DEFAULT NULL,
-  `ingredients_image` varchar(64) DEFAULT NULL,
-  `image_folder` varchar(48) DEFAULT NULL,
-  `source_pdf` varchar(98) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `main_image` varchar(57) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `ingredients_image` varchar(64) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `image_folder` varchar(48) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `source_pdf` varchar(98) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `recipes_data_ver8_xlsx___recipes`
@@ -119,6 +147,26 @@ INSERT INTO `recipes_data_ver8_xlsx___recipes` (`recipe_id`, `slug`, `title`, `s
 (39, 'top-chef-seared-grassfed-steaks', 'Top Chef Seared Grassfed Steaks', 'with Sweet Chili-Glazed Vegetables', 'Beef', 4, 'In this recipe, inspired by our Quickfire Challenge from Top Chef Season 15 on Bravo, simple grassfed steaks and rice get a sweet, tart, and spicy lift from glazed mushrooms and bok choy. Sliced radishes, softened a bit with lime juice, finish the dish off with subtle crunch.', 12, 6, 'images/top-chef-seared-grassfed-steaks/dish.jpg', 'images/top-chef-seared-grassfed-steaks/ingredients.png', 'images/top-chef-seared-grassfed-steaks', 'Recipe_Top_Chef_Seared_Grassfed_Steaks_with_Sweet_Chili-Glazed_Vegetables.pdf'),
 (40, 'tuscan-chicken-green-lentil-stew', 'Tuscan Chicken & Green Lentil Stew', 'with Goat Cheese', 'Chicken', 2, 'In this comforting cold-weather recipe, we\'re serving Tuscan-spiced chicken over tender green lentils and vegetables cooked in a light, savory tomato broth. Capers and crushed red pepper add briny flavor and a touch of heat to cut through the rich, earthy stew. (Chefs, rinsing the lentils after cooking removes excess starch, resulting in a more delicate flavor.)', 12, 6, 'images/tuscan-chicken-green-lentil-stew/dish.jpg', 'images/tuscan-chicken-green-lentil-stew/ingredients.png', 'images/tuscan-chicken-green-lentil-stew', 'Recipe_Tuscan_Chicken_Green_Lentil_Stew_with_Goat_Cheese.pdf');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int UNSIGNED NOT NULL,
+  `username` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `password_hash` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password_hash`, `created_at`) VALUES
+(1, 'admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '2026-11-05 17:19:07');
+
 --
 -- Indexes for dumped tables
 --
@@ -130,6 +178,13 @@ ALTER TABLE `recipes`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -137,21 +192,11 @@ ALTER TABLE `recipes`
 -- AUTO_INCREMENT for table `recipes`
 --
 ALTER TABLE `recipes`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
--- Table structure for table `users`
-CREATE TABLE IF NOT EXISTS `users` (
-  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `username` VARCHAR(100) NOT NULL UNIQUE,
-  `password_hash` VARCHAR(255) NOT NULL,
-  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- default admin user
-INSERT INTO `users` (`username`, `password_hash`) VALUES
-('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');

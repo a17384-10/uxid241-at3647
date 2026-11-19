@@ -1,429 +1,430 @@
 ingredient_id,recipe_id,recipe_title,sort_order,quantity,unit,name,full_text,source
-1,1,Ancho-Orange Chicken,1,¾,cup,Jasmine Rice,¾ cup Jasmine Rice,ai
-2,1,Ancho-Orange Chicken,2,¾,lb,Carrots,¾ lb Carrots,ai
-3,1,Ancho-Orange Chicken,3,2,cloves,Garlic,2 cloves Garlic,ai
-4,1,Ancho-Orange Chicken,4,1,bunch,Kale,1 bunch Kale,ai
-5,1,Ancho-Orange Chicken,5,1,,Lime,1 Lime,ai
-6,1,Ancho-Orange Chicken,6,1,,Orange,1 Orange,ai
-7,1,Ancho-Orange Chicken,7,2,Tbsps,Butter,2 Tbsps Butter,ai
-8,1,Ancho-Orange Chicken,8,4,,"Boneless, Skinless Chicken Breasts","4 Boneless, Skinless Chicken Breasts",pdf
-9,1,Ancho-Orange Chicken,9,1,Tbsp,Ancho Chile Paste,1 Tbsp Ancho Chile Paste,pdf
-10,1,Ancho-Orange Chicken,10,2,Tbsps,Crème Fraîche,2 Tbsps Crème Fraîche,pdf
-11,1,Ancho-Orange Chicken,11,3,Tbsps,Golden Raisins,3 Tbsps Golden Raisins,pdf
-12,2,Beef Medallions & Mushroom Sauce,1,2,,Beef Medallions,2 Beef Medallions,ai
-13,2,Beef Medallions & Mushroom Sauce,2,2,cloves,Garlic,2 cloves Garlic,ai
-14,2,Beef Medallions & Mushroom Sauce,3,1,,Shallot,1 Shallot,ai
-15,2,Beef Medallions & Mushroom Sauce,4,1,bunch,Kale,1 bunch Kale,ai
-16,2,Beef Medallions & Mushroom Sauce,5,2,Tbsps,Butter,2 Tbsps Butter,ai
-17,2,Beef Medallions & Mushroom Sauce,6,1,Tbsp,Dijon Mustard,1 Tbsp Dijon Mustard,ai
-18,2,Beef Medallions & Mushroom Sauce,7,2,Tbsps,Verjus Blanc,2 Tbsps Verjus Blanc,ai
-19,2,Beef Medallions & Mushroom Sauce,8,4,oz,Cremini Mushrooms,4 oz Cremini Mushrooms,pdf
-20,2,Beef Medallions & Mushroom Sauce,9,¾,lb,Yukon Gold Potatoes,¾ lb Yukon Gold Potatoes,pdf
-21,3,Broccoli & Basil Pesto Sandwiches,1,2,oz,Asiago Cheese,2 oz Asiago Cheese,ai
-22,3,Broccoli & Basil Pesto Sandwiches,2,1,piece,Focaccia Bread,1 Piece Focaccia Bread,pdf
-23,3,Broccoli & Basil Pesto Sandwiches,3,1,,8-Ounce Can Tomato Sauce,1 8-Ounce Can Tomato Sauce,pdf
-24,3,Broccoli & Basil Pesto Sandwiches,4,½,lb,Fresh Mozzarella Cheese,½ lb Fresh Mozzarella Cheese,pdf
-25,3,Broccoli & Basil Pesto Sandwiches,5,2,,Clementines,2 Clementines,pdf
-26,3,Broccoli & Basil Pesto Sandwiches,6,2,cloves,Garlic,2 cloves Garlic,pdf
-27,3,Broccoli & Basil Pesto Sandwiches,7,2,,Romaine Lettuce Hearts,2 Romaine Lettuce Hearts,pdf
-28,3,Broccoli & Basil Pesto Sandwiches,8,1,lb,Broccoli,1 lb Broccoli,pdf
-29,3,Broccoli & Basil Pesto Sandwiches,9,1,oz,Golden Or Red Sweet Piquante Peppers,1 oz Golden Or Red Sweet Piquante Peppers,pdf
-30,3,Broccoli & Basil Pesto Sandwiches,10,2,Tbsps,Crème Fraîche,2 Tbsps Crème Fraîche,pdf
-31,3,Broccoli & Basil Pesto Sandwiches,11,1,Tbsp,Dijon Mustard,1 Tbsp Dijon Mustard,pdf
-32,3,Broccoli & Basil Pesto Sandwiches,12,½,cup,Basil & Cashew Pesto (Contains Pine Nuts),½ cup Basil & Cashew Pesto (Contains Pine Nuts),pdf
-33,3,Broccoli & Basil Pesto Sandwiches,13,⅓,cup,Shaved Parmesan Cheese,⅓ cup Shaved Parmesan Cheese,pdf
-34,3,Broccoli & Basil Pesto Sandwiches,14,1,Tbsp,"Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)","1 Tbsp Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)",pdf
-35,4,Broccoli & Mozzarella Calzones,1,2,Tbsps,Mayonnaise,2 Tbsps Mayonnaise,ai
-36,4,Broccoli & Mozzarella Calzones,2,1½,lbs,Pizza Dough,1½ lbs Pizza Dough,pdf
-37,4,Broccoli & Mozzarella Calzones,3,3,cloves,Garlic,3 cloves Garlic,pdf
-38,4,Broccoli & Mozzarella Calzones,4,1,,Romaine Lettuce Heart,1 Romaine Lettuce Heart,pdf
-39,4,Broccoli & Mozzarella Calzones,5,1,lb,Broccoli,1 lb Broccoli,pdf
-40,4,Broccoli & Mozzarella Calzones,6,1,cup,Part-Skim Ricotta Cheese,1 cup Part-Skim Ricotta Cheese,pdf
-41,4,Broccoli & Mozzarella Calzones,7,1,,8-Ounce Can Tomato Sauce,1 8-Ounce Can Tomato Sauce,pdf
-42,4,Broccoli & Mozzarella Calzones,8,½,lb,Fresh Mozzarella Cheese,½ lb Fresh Mozzarella Cheese,pdf
-43,4,Broccoli & Mozzarella Calzones,9,¼,cup,Grated Parmesan Cheese,¼ cup Grated Parmesan Cheese,pdf
-44,4,Broccoli & Mozzarella Calzones,10,2,oz,Black Cerignola Olives,2 oz Black Cerignola Olives,pdf
-45,4,Broccoli & Mozzarella Calzones,11,1,Tbsp,"Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)","1 Tbsp Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)",pdf
-46,4,Broccoli & Mozzarella Calzones,12,1,,Lemon,1 Lemon,pdf
-47,5,Bucatini Alfredo,1,6,oz,Bucatini Pasta,6 oz Bucatini Pasta,ai
-48,5,Bucatini Alfredo,2,½,lb,Broccoli,½ lb Broccoli,ai
-49,5,Bucatini Alfredo,3,2,cloves,Garlic,2 cloves Garlic,ai
-50,5,Bucatini Alfredo,4,¼,cup,Heavy Cream,¼ cup Heavy Cream,ai
-51,5,Bucatini Alfredo,5,2,Tbsps,Verjus Blanc,2 Tbsps Verjus Blanc,ai
-52,5,Bucatini Alfredo,6,2,Tbsps,Crème Fraîche,2 Tbsps Crème Fraîche,pdf
-53,5,Bucatini Alfredo,7,¼,tsp,Crushed Red Pepper Flakes,¼ tsp Crushed Red Pepper Flakes,pdf
-54,5,Bucatini Alfredo,8,3,Tbsps,All-Purpose Flour,3 Tbsps All-Purpose Flour,pdf
-55,5,Bucatini Alfredo,9,¼,cup,Grated Pecorino Cheese,¼ cup Grated Pecorino Cheese,pdf
-56,6,Bucatini & Tomato Sauce,1,6,oz,Bucatini Pasta,6 oz Bucatini Pasta,pdf
-57,6,Bucatini & Tomato Sauce,2,1,,14-Ounce Can Datterini Tomatoes,1 14-Ounce Can Datterini Tomatoes,pdf
-58,6,Bucatini & Tomato Sauce,3,2,cloves,Garlic,2 cloves Garlic,pdf
-59,6,Bucatini & Tomato Sauce,4,2,Tbsps,Butter,2 Tbsps Butter,pdf
-60,6,Bucatini & Tomato Sauce,5,1,Tbsp,Capers,1 Tbsp Capers,pdf
-61,6,Bucatini & Tomato Sauce,6,1,lb,Broccoli,1 lb Broccoli,pdf
-62,6,Bucatini & Tomato Sauce,7,¾,oz,Grana Padano Cheese,¾ oz Grana Padano Cheese,pdf
-63,6,Bucatini & Tomato Sauce,8,1,oz,Kalamata Olives,1 oz Kalamata Olives,pdf
-64,6,Bucatini & Tomato Sauce,9,¼,tsp,Crushed Red Pepper Flakes,¼ tsp Crushed Red Pepper Flakes,pdf
-65,6,Bucatini & Tomato Sauce,10,1,Tbsp,"Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)","1 Tbsp Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)",pdf
-66,7,Cheesy Enchiladas Rojas,1,1,bunch,Kale,1 bunch Kale,ai
-67,7,Cheesy Enchiladas Rojas,2,1,,Lime,1 Lime,ai
-68,7,Cheesy Enchiladas Rojas,3,8,,Flour Tortillas,8 Flour Tortillas,pdf
-69,7,Cheesy Enchiladas Rojas,4,¾,cup,Jasmine Rice,¾ cup Jasmine Rice,pdf
-70,7,Cheesy Enchiladas Rojas,5,1,,28-Ounce Can Whole Peeled Tomatoes,1 28-Ounce Can Whole Peeled Tomatoes,pdf
-71,7,Cheesy Enchiladas Rojas,6,4,oz,Cremini Mushrooms,4 oz Cremini Mushrooms,pdf
-72,7,Cheesy Enchiladas Rojas,7,3,cloves,Garlic,3 cloves Garlic,pdf
-73,7,Cheesy Enchiladas Rojas,8,1,,Yellow Onion,1 Yellow Onion,pdf
-74,7,Cheesy Enchiladas Rojas,9,1,bunch,Chives,1 bunch Chives,pdf
-75,7,Cheesy Enchiladas Rojas,10,2,Tbsps,Ancho Chile Paste,2 Tbsps Ancho Chile Paste,pdf
-76,7,Cheesy Enchiladas Rojas,11,1,Tbsp,"Mexican Spice Blend (Ancho Chile Powder, Sweet Paprika, Garlic Powder, Ground Cumin, & Whole Mexican Oregano)","1 Tbsp Mexican Spice Blend (Ancho Chile Powder, Sweet Paprika, Garlic Powder, Ground Cumin, & Whole Mexican Oregano)",pdf
-77,7,Cheesy Enchiladas Rojas,12,½,lb,White Cheddar Cheese,½ lb White Cheddar Cheese,pdf
-78,7,Cheesy Enchiladas Rojas,13,½,cup,Sour Cream,½ cup Sour Cream,pdf
-79,8,Crispy Fish Sandwiches,1,1½,lbs,Sweet Potatoes,1½ lbs Sweet Potatoes,ai
-80,8,Crispy Fish Sandwiches,2,4,,Potato Rolls,4 Potato Rolls,ai
-81,8,Crispy Fish Sandwiches,3,¼,cup,Mayonnaise,¼ cup Mayonnaise,ai
-82,8,Crispy Fish Sandwiches,4,21,oz,Wild Alaskan Pollock Fillets,21 oz Wild Alaskan Pollock Fillets,pdf
-83,8,Crispy Fish Sandwiches,5,2,,Cage-Free Farm Eggs,2 Cage-Free Farm Eggs,pdf
-84,8,Crispy Fish Sandwiches,6,2,Tbsps,Sweet Pickle Relish,2 Tbsps Sweet Pickle Relish,pdf
-85,8,Crispy Fish Sandwiches,7,1,,Romaine Lettuce Heart,1 Romaine Lettuce Heart,pdf
-86,8,Crispy Fish Sandwiches,8,1,Tbsp,"Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)","1 Tbsp Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)",pdf
-87,8,Crispy Fish Sandwiches,9,1¼,cups,Panko Breadcrumbs,1¼ cups Panko Breadcrumbs,pdf
-88,8,Crispy Fish Sandwiches,10,¼,cup,Creamy Mustard Sauce,¼ cup Creamy Mustard Sauce,pdf
-89,9,General Tso's Chicken,1,10,oz,Chopped Chicken Breast,10 oz Chopped Chicken Breast,pdf
-90,9,General Tso's Chicken,2,1,head,Baby Bok Choy,1 head Baby Bok Choy,pdf
-91,9,General Tso's Chicken,3,¾,cup,Jasmine Rice,¾ cup Jasmine Rice,pdf
-92,9,General Tso's Chicken,4,2,cloves,Garlic,2 cloves Garlic,pdf
-93,9,General Tso's Chicken,5,1,Tbsp,Rice Vinegar,1 Tbsp Rice Vinegar,pdf
-94,9,General Tso's Chicken,6,1,,1-Inch Piece Ginger,1 1-Inch Piece Ginger,pdf
-95,9,General Tso's Chicken,7,1,tsp,Sriracha,1 tsp Sriracha,pdf
-96,9,General Tso's Chicken,8,1,Tbsp,Honey,1 Tbsp Honey,pdf
-97,9,General Tso's Chicken,9,1,Tbsp,Sesame Oil,1 Tbsp Sesame Oil,pdf
-98,9,General Tso's Chicken,10,¼,cup,Cornstarch,¼ cup Cornstarch,pdf
-99,9,General Tso's Chicken,11,2,Tbsps,Hoisin Sauce,2 Tbsps Hoisin Sauce,pdf
-100,10,Hoisin-Glazed Pork Chops,1,½,lb,Green Cabbage,½ lb Green Cabbage,ai
-101,10,Hoisin-Glazed Pork Chops,2,1,Tbsp,Rice Vinegar,1 Tbsp Rice Vinegar,ai
-102,10,Hoisin-Glazed Pork Chops,3,4,,"Boneless, Center-Cut Pork Chops","4 Boneless, Center-Cut Pork Chops",pdf
-103,10,Hoisin-Glazed Pork Chops,4,2,,Carrots,2 Carrots,pdf
-104,10,Hoisin-Glazed Pork Chops,5,1,bunch,Chives,1 bunch Chives,pdf
-105,10,Hoisin-Glazed Pork Chops,6,2,Tbsps,Tahini,2 Tbsps Tahini,pdf
-106,10,Hoisin-Glazed Pork Chops,7,2,Tbsps,Soy Sauce,2 Tbsps Soy Sauce,pdf
-107,10,Hoisin-Glazed Pork Chops,8,¾,lb,Fresh Wonton Noodles,¾ lb Fresh Wonton Noodles,pdf
-108,10,Hoisin-Glazed Pork Chops,9,2,tsps,Sambal Oelek,2 tsps Sambal Oelek,pdf
-109,10,Hoisin-Glazed Pork Chops,10,1,,1-Inch Piece Ginger,1 1-Inch Piece Ginger,pdf
-110,10,Hoisin-Glazed Pork Chops,11,¼,cup,Hoisin Sauce,¼ cup Hoisin Sauce,pdf
-111,11,Honey-Butter Barramundi,1,4,,Carrots,4 Carrots,ai
-112,11,Honey-Butter Barramundi,2,6,oz,Radishes,6 oz Radishes,ai
-113,11,Honey-Butter Barramundi,3,1,,Lemon,1 Lemon,ai
-114,11,Honey-Butter Barramundi,4,2,cloves,Garlic,2 cloves Garlic,ai
-115,11,Honey-Butter Barramundi,5,1,bunch,Parsley,1 bunch Parsley,ai
-116,11,Honey-Butter Barramundi,6,2,Tbsps,Butter,2 Tbsps Butter,ai
-117,11,Honey-Butter Barramundi,7,2,Tbsps,Honey,2 Tbsps Honey,ai
-118,11,Honey-Butter Barramundi,8,4,,Skin-On Barramundi Fillets,4 Skin-On Barramundi Fillets,pdf
-119,11,Honey-Butter Barramundi,9,½,cup,Plain Greek Yogurt,½ cup Plain Greek Yogurt,pdf
-120,11,Honey-Butter Barramundi,10,1⅛,lbs,Yukon Gold Potatoes,1⅛ lbs Yukon Gold Potatoes,pdf
-121,11,Honey-Butter Barramundi,11,1,Tbsp,"Za'atar Seasoning (Ground Sumac, Sesame Seeds, Salt, Ground Thyme, Whole Dried Oregano, & Crushed Aleppo Pepper)","1 Tbsp Za'atar Seasoning (Ground Sumac, Sesame Seeds, Salt, Ground Thyme, Whole Dried Oregano, & Crushed Aleppo Pepper)",pdf
-122,12,Kale & Ricotta Quiche,1,1,,Pie Crust (in Tin),1 Pie Crust (in Tin),ai
-123,12,Kale & Ricotta Quiche,2,1,bunch,Kale,1 bunch Kale,ai
-124,12,Kale & Ricotta Quiche,3,2,cloves,Garlic,2 cloves Garlic,ai
-125,12,Kale & Ricotta Quiche,4,1,,Shallot,1 Shallot,ai
-126,12,Kale & Ricotta Quiche,5,½,cup,Heavy Cream,½ cup Heavy Cream,ai
-127,12,Kale & Ricotta Quiche,6,1,,Lemon,1 Lemon,ai
-128,12,Kale & Ricotta Quiche,7,1,,Apple,1 Apple,ai
-129,12,Kale & Ricotta Quiche,8,4,,Cage-Free Farm Eggs,4 Cage-Free Farm Eggs,pdf
-130,12,Kale & Ricotta Quiche,9,1,cup,Part-Skim Ricotta Cheese,1 cup Part-Skim Ricotta Cheese,pdf
-131,12,Kale & Ricotta Quiche,10,1,,Romaine Lettuce Heart,1 Romaine Lettuce Heart,pdf
-132,12,Kale & Ricotta Quiche,11,2,Tbsps,Sliced Roasted Almonds,2 Tbsps Sliced Roasted Almonds,pdf
-133,12,Kale & Ricotta Quiche,12,1,Tbsp,"Cajun Spice Blend (Smoked Paprika, Ground Yellow Mustard, Onion Powder, Garlic Powder, Whole Dried Oregano, Whole Dried Thyme, & Cayenne Pepper)","1 Tbsp Cajun Spice Blend (Smoked Paprika, Ground Yellow Mustard, Onion Powder, Garlic Powder, Whole Dried Oregano, Whole Dried Thyme, & Cayenne Pepper)",pdf
-134,12,Kale & Ricotta Quiche,13,2,Tbsps,Crème Fraîche,2 Tbsps Crème Fraîche,pdf
-135,13,Mexican-Spiced Barramundi,1,2,,Skin-On Barramundi Fillets,2 Skin-On Barramundi Fillets,ai
-136,13,Mexican-Spiced Barramundi,2,1,,Sweet Potato,1 Sweet Potato,ai
-137,13,Mexican-Spiced Barramundi,3,1,bunch,Kale,1 bunch Kale,ai
-138,13,Mexican-Spiced Barramundi,4,1,,Avocado,1 Avocado,ai
-139,13,Mexican-Spiced Barramundi,5,1,,Lime,1 Lime,ai
-140,13,Mexican-Spiced Barramundi,6,1,,Navel Orange,1 Navel Orange,ai
-141,13,Mexican-Spiced Barramundi,7,1,clove,Garlic,1 clove Garlic,ai
-142,13,Mexican-Spiced Barramundi,8,2,Tbsps,Roasted Pepitas,2 Tbsps Roasted Pepitas,ai
-143,13,Mexican-Spiced Barramundi,9,1,Tbsp,"Mexican Spice Blend (Ancho Chile Powder, Smoked Paprika, Garlic Powder, Ground Cumin, & Dried Mexican Oregano)","1 Tbsp Mexican Spice Blend (Ancho Chile Powder, Smoked Paprika, Garlic Powder, Ground Cumin, & Dried Mexican Oregano)",ai
-144,14,Mushroom & Potato Tacos,1,4,,Flour Tortillas,4 Flour Tortillas,pdf
-145,14,Mushroom & Potato Tacos,2,3,oz,Radishes,3 oz Radishes,pdf
-146,14,Mushroom & Potato Tacos,3,1,,Orange,1 Orange,pdf
-147,14,Mushroom & Potato Tacos,4,¾,lb,Yukon Gold Potatoes,¾ lb Yukon Gold Potatoes,pdf
-148,14,Mushroom & Potato Tacos,5,6,oz,Cremini Mushrooms,6 oz Cremini Mushrooms,pdf
-149,14,Mushroom & Potato Tacos,6,1,,Shallot,1 Shallot,pdf
-150,14,Mushroom & Potato Tacos,7,3,Tbsps,Roasted Peanuts,3 Tbsps Roasted Peanuts,pdf
-151,14,Mushroom & Potato Tacos,8,¼,cup,Sour Cream,¼ cup Sour Cream,pdf
-152,14,Mushroom & Potato Tacos,9,1,oz,Sliced Pickled Jalapeño Pepper,1 oz Sliced Pickled Jalapeño Pepper,pdf
-153,14,Mushroom & Potato Tacos,10,1,oz,Golden Or Red Sweet Piquante Peppers,1 oz Golden Or Red Sweet Piquante Peppers,pdf
-154,14,Mushroom & Potato Tacos,11,1,Tbsp,"Spanish Spice Blend (Smoked Paprika, Ground Cumin, Ground Coriander, Dried Mexican Oregano, Cayenne Pepper, & Ground Cinnamon)","1 Tbsp Spanish Spice Blend (Smoked Paprika, Ground Cumin, Ground Coriander, Dried Mexican Oregano, Cayenne Pepper, & Ground Cinnamon)",pdf
-155,14,Mushroom & Potato Tacos,12,1,,Romaine Lettuce Heart,1 Romaine Lettuce Heart,pdf
-156,14,Mushroom & Potato Tacos,13,2,Tbsps,Rice Vinegar,2 Tbsps Rice Vinegar,pdf
-157,15,Parmesan-Crusted Chicken,1,1½,lbs,Sweet Potatoes,1½ lbs Sweet Potatoes,ai
-158,15,Parmesan-Crusted Chicken,2,1,lb,Broccoli,1 lb Broccoli,ai
-159,15,Parmesan-Crusted Chicken,3,1,,Lemon,1 Lemon,ai
-160,15,Parmesan-Crusted Chicken,4,2,Tbsps,Butter,2 Tbsps Butter,ai
-161,15,Parmesan-Crusted Chicken,5,¼,cup,Mayonnaise,¼ cup Mayonnaise,ai
-162,15,Parmesan-Crusted Chicken,6,4,,"Boneless, Skinless Chicken Breasts","4 Boneless, Skinless Chicken Breasts",pdf
-163,15,Parmesan-Crusted Chicken,7,¼,cup,All-Purpose Flour,¼ cup All-Purpose Flour,pdf
-164,15,Parmesan-Crusted Chicken,8,½,cup,Grated Parmesan Cheese,½ cup Grated Parmesan Cheese,pdf
-165,15,Parmesan-Crusted Chicken,9,1,Tbsp,"Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)","1 Tbsp Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)",pdf
-166,16,Pimento Cheeseburgers,1,10,oz,Ground Beef,10 oz Ground Beef,ai
-167,16,Pimento Cheeseburgers,2,2,,Potato Buns,2 Potato Buns,pdf
-168,16,Pimento Cheeseburgers,3,1,,Sweet Potato,1 Sweet Potato,pdf
-169,16,Pimento Cheeseburgers,4,2,oz,Cheddar Cheese,2 oz Cheddar Cheese,pdf
-170,16,Pimento Cheeseburgers,5,1,oz,Sweet Piquante Peppers,1 oz Sweet Piquante Peppers,pdf
-171,16,Pimento Cheeseburgers,6,2,Tbsps,Mayonnaise,2 Tbsps Mayonnaise,pdf
-172,16,Pimento Cheeseburgers,7,1,tsp,"Pimento Cheese Spice Blend (Garlic Powder, Ground Yellow Mustard, & Sugar)","1 tsp Pimento Cheese Spice Blend (Garlic Powder, Ground Yellow Mustard, & Sugar)",pdf
-173,17,Pork Chorizo Tacos,1,6,,Flour Tortillas,6 Flour Tortillas,ai
-174,17,Pork Chorizo Tacos,2,½,lb,Green Cabbage,½ lb Green Cabbage,ai
-175,17,Pork Chorizo Tacos,3,1,,Orange,1 Orange,ai
-176,17,Pork Chorizo Tacos,4,1,,Lime,1 Lime,ai
-177,17,Pork Chorizo Tacos,5,3,oz,Radishes,3 oz Radishes,ai
-178,17,Pork Chorizo Tacos,6,1,clove,Garlic,1 clove Garlic,ai
-179,17,Pork Chorizo Tacos,7,¾,lb,Yukon Gold Potatoes,¾ lb Yukon Gold Potatoes,pdf
-180,17,Pork Chorizo Tacos,8,10,oz,Ground Pork Chorizo,10 oz Ground Pork Chorizo,pdf
-181,17,Pork Chorizo Tacos,9,2,Tbsps,Crème Fraîche,2 Tbsps Crème Fraîche,pdf
-182,17,Pork Chorizo Tacos,10,2,Tbsps,Grated Cotija Cheese,2 Tbsps Grated Cotija Cheese,pdf
-183,18,Roasted Broccoli & Fregola Sarda Salad,1,2,,Cage-Free Farm Eggs,2 Cage-Free Farm Eggs,pdf
-184,18,Roasted Broccoli & Fregola Sarda Salad,2,½,cup,Fregola Sarda Pasta,½ cup Fregola Sarda Pasta,pdf
-185,18,Roasted Broccoli & Fregola Sarda Salad,3,1,clove,Garlic,1 clove Garlic,pdf
-186,18,Roasted Broccoli & Fregola Sarda Salad,4,1,lb,Broccoli,1 lb Broccoli,pdf
-187,18,Roasted Broccoli & Fregola Sarda Salad,5,1,,Red Onion,1 Red Onion,pdf
-188,18,Roasted Broccoli & Fregola Sarda Salad,6,1,bunch,Mint,1 bunch Mint,pdf
-189,18,Roasted Broccoli & Fregola Sarda Salad,7,2,Tbsps,Tahini,2 Tbsps Tahini,pdf
-190,18,Roasted Broccoli & Fregola Sarda Salad,8,1,oz,Pecorino Romano Cheese,1 oz Pecorino Romano Cheese,pdf
-191,18,Roasted Broccoli & Fregola Sarda Salad,9,1,Tbsp,"Za'atar Seasoning (Ground Sumac, Sesame Seeds, Salt, Ground Thyme, Whole Dried Oregano, & Crushed Aleppo Pepper)","1 Tbsp Za'atar Seasoning (Ground Sumac, Sesame Seeds, Salt, Ground Thyme, Whole Dried Oregano, & Crushed Aleppo Pepper)",pdf
-192,18,Roasted Broccoli & Fregola Sarda Salad,10,3,Tbsps,Roasted Almonds,3 Tbsps Roasted Almonds,pdf
-193,18,Roasted Broccoli & Fregola Sarda Salad,11,1,,Lemon,1 Lemon,pdf
-194,19,Roasted Brussels Sprout & Freekeh Salad,1,⅔,cup,Cracked Freekeh,⅔ cup Cracked Freekeh,pdf
-195,19,Roasted Brussels Sprout & Freekeh Salad,2,½,cup,Sheep's Milk Yogurt,½ cup Sheep's Milk Yogurt,pdf
-196,19,Roasted Brussels Sprout & Freekeh Salad,3,2,,Carrots,2 Carrots,pdf
-197,19,Roasted Brussels Sprout & Freekeh Salad,4,2,cloves,Garlic,2 cloves Garlic,pdf
-198,19,Roasted Brussels Sprout & Freekeh Salad,5,1,,Lemon,1 Lemon,pdf
-199,19,Roasted Brussels Sprout & Freekeh Salad,6,1,bunch,Mint,1 bunch Mint,pdf
-200,19,Roasted Brussels Sprout & Freekeh Salad,7,2,,Dried Medjool Dates,2 Dried Medjool Dates,pdf
-201,19,Roasted Brussels Sprout & Freekeh Salad,8,2,Tbsps,Pickled Peruvian Peppers,2 Tbsps Pickled Peruvian Peppers,pdf
-202,19,Roasted Brussels Sprout & Freekeh Salad,9,1¾,oz,Barrel-Aged Feta Cheese,1¾ oz Barrel-Aged Feta Cheese,pdf
-203,19,Roasted Brussels Sprout & Freekeh Salad,10,2,Tbsps,Roasted Almonds,2 Tbsps Roasted Almonds,pdf
-204,19,Roasted Brussels Sprout & Freekeh Salad,11,¼,tsp,Crushed Red Pepper Flakes,¼ tsp Crushed Red Pepper Flakes,pdf
-205,19,Roasted Brussels Sprout & Freekeh Salad,12,¾,lb,Brussels Sprouts,¾ lb Brussels Sprouts,pdf
-206,20,Roasted Cauliflower Salad,1,1,bunch,Kale,1 bunch Kale,ai
-207,20,Roasted Cauliflower Salad,2,2,,Cage-Free Farm Eggs,2 Cage-Free Farm Eggs,pdf
-208,20,Roasted Cauliflower Salad,3,2,cloves,Garlic,2 cloves Garlic,pdf
-209,20,Roasted Cauliflower Salad,4,1,head,Cauliflower,1 head Cauliflower,pdf
-210,20,Roasted Cauliflower Salad,5,1,,Lemon,1 Lemon,pdf
-211,20,Roasted Cauliflower Salad,6,2,Tbsps,Butter,2 Tbsps Butter,pdf
-212,20,Roasted Cauliflower Salad,7,1,,Shallot,1 Shallot,pdf
-213,20,Roasted Cauliflower Salad,8,1,Tbsp,Capers,1 Tbsp Capers,pdf
-214,20,Roasted Cauliflower Salad,9,3,Tbsps,Panko Breadcrumbs,3 Tbsps Panko Breadcrumbs,pdf
-215,20,Roasted Cauliflower Salad,10,¼,cup,Grated Parmesan Cheese,¼ cup Grated Parmesan Cheese,pdf
-216,21,Roasted Chicken & Fall Vegetables,1,2,,Half Chickens,2 Half Chickens,ai
-217,21,Roasted Chicken & Fall Vegetables,2,1,lb,Sweet Potatoes,1 lb Sweet Potatoes,pdf
-218,21,Roasted Chicken & Fall Vegetables,3,4,oz,Cranberries,4 oz Cranberries,pdf
-219,21,Roasted Chicken & Fall Vegetables,4,½,lb,Brussels Sprouts,½ lb Brussels Sprouts,pdf
-220,21,Roasted Chicken & Fall Vegetables,5,2,Tbsps,Apple Cider Vinegar,2 Tbsps Apple Cider Vinegar,pdf
-221,21,Roasted Chicken & Fall Vegetables,6,2,Tbsps,Sugar,2 Tbsps Sugar,pdf
-222,21,Roasted Chicken & Fall Vegetables,7,1,,1-Inch Piece Ginger,1 1-Inch Piece Ginger,pdf
-223,21,Roasted Chicken & Fall Vegetables,8,¼,cup,Roasted Walnuts,¼ cup Roasted Walnuts,pdf
-224,21,Roasted Chicken & Fall Vegetables,9,1,Tbsp,"Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)","1 Tbsp Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)",pdf
-225,22,Roasted Pork & Broccoli,1,1,,Pork Tenderloin,1 Pork Tenderloin,ai
-226,22,Roasted Pork & Broccoli,2,½,lb,Broccoli,½ lb Broccoli,ai
-227,22,Roasted Pork & Broccoli,3,2,cloves,Garlic,2 cloves Garlic,ai
-228,22,Roasted Pork & Broccoli,4,1,,Apple,1 Apple,ai
-229,22,Roasted Pork & Broccoli,5,2,oz,Fontina Cheese,2 oz Fontina Cheese,ai
-230,22,Roasted Pork & Broccoli,6,¼,cup,Milk,¼ cup Milk,ai
-231,22,Roasted Pork & Broccoli,7,3,Tbsps,Panko Breadcrumbs,3 Tbsps Panko Breadcrumbs,pdf
-232,22,Roasted Pork & Broccoli,8,2,Tbsps,All-Purpose Flour,2 Tbsps All-Purpose Flour,pdf
-233,22,Roasted Pork & Broccoli,9,1,Tbsp,Apple Cider Vinegar,1 Tbsp Apple Cider Vinegar,pdf
-234,22,Roasted Pork & Broccoli,10,1,Tbsp,"Southern Spice Blend (Onion Powder, Garlic Powder, Ground Yellow Mustard, Smoked Paprika, & Cayenne Pepper)","1 Tbsp Southern Spice Blend (Onion Powder, Garlic Powder, Ground Yellow Mustard, Smoked Paprika, & Cayenne Pepper)",pdf
-235,23,Roasted Red Pepper Pasta,1,½,lb,Broccoli,½ lb Broccoli,ai
-236,23,Roasted Red Pepper Pasta,2,1,,Lemon,1 Lemon,ai
-237,23,Roasted Red Pepper Pasta,3,2,cloves,Garlic,2 cloves Garlic,ai
-238,23,Roasted Red Pepper Pasta,4,1,Tbsp,Capers,1 Tbsp Capers,ai
-239,23,Roasted Red Pepper Pasta,5,1,Tbsp,Tomato Paste,1 Tbsp Tomato Paste,ai
-240,23,Roasted Red Pepper Pasta,6,¼,cup,Heavy Cream,¼ cup Heavy Cream,ai
-241,23,Roasted Red Pepper Pasta,7,1,Tbsp,Butter,1 Tbsp Butter,ai
-242,23,Roasted Red Pepper Pasta,8,6,oz,Whole Grain Pipe Rigate Pasta,6 oz Whole Grain Pipe Rigate Pasta,pdf
-243,23,Roasted Red Pepper Pasta,9,2,oz,Roasted Piquillo Peppers,2 oz Roasted Piquillo Peppers,pdf
-244,23,Roasted Red Pepper Pasta,10,2,Tbsps,Grated Parmesan Cheese,2 Tbsps Grated Parmesan Cheese,pdf
-245,23,Roasted Red Pepper Pasta,11,2,Tbsps,Sliced Roasted Almonds,2 Tbsps Sliced Roasted Almonds,pdf
-246,23,Roasted Red Pepper Pasta,12,1½,tsps,Calabrian Chile Paste,1½ tsps Calabrian Chile Paste,pdf
-247,24,Roasted Squash Curry,1,1,,Spaghetti Squash,1 Spaghetti Squash,ai
-248,24,Roasted Squash Curry,2,1,,Lime Leaf,1 Lime Leaf,ai
-249,24,Roasted Squash Curry,3,½,cup,Jasmine Rice,½ cup Jasmine Rice,pdf
-250,24,Roasted Squash Curry,4,1¾,cups,Light Coconut Milk,1¾ cups Light Coconut Milk,pdf
-251,24,Roasted Squash Curry,5,1,,Lime,1 Lime,pdf
-252,24,Roasted Squash Curry,6,1,,Yellow Onion,1 Yellow Onion,pdf
-253,24,Roasted Squash Curry,7,1,bunch,Mint,1 bunch Mint,pdf
-254,24,Roasted Squash Curry,8,2,Tbsps,Dried Mung Beans,2 Tbsps Dried Mung Beans,pdf
-255,24,Roasted Squash Curry,9,1½,Tbsps,Yellow Curry Paste,1½ Tbsps Yellow Curry Paste,pdf
-256,24,Roasted Squash Curry,10,1,,1-Inch Piece Ginger,1 1-Inch Piece Ginger,pdf
-257,24,Roasted Squash Curry,11,1,Tbsp,Sugar,1 Tbsp Sugar,pdf
-258,24,Roasted Squash Curry,12,½,lb,Baby Bok Choy,½ lb Baby Bok Choy,pdf
-259,25,Roasted Turkey Breast & Farro-Endive Salad,1,1,,Turkey Breast Roast,1 Turkey Breast Roast,pdf
-260,25,Roasted Turkey Breast & Farro-Endive Salad,2,⅔,cup,Semi-Pearled Farro,⅔ cup Semi-Pearled Farro,pdf
-261,25,Roasted Turkey Breast & Farro-Endive Salad,3,1,,Apple,1 Apple,pdf
-262,25,Roasted Turkey Breast & Farro-Endive Salad,4,1,,Lemon,1 Lemon,pdf
-263,25,Roasted Turkey Breast & Farro-Endive Salad,5,1,,Endive,1 Endive,pdf
-264,25,Roasted Turkey Breast & Farro-Endive Salad,6,1,bunch,Chives,1 bunch Chives,pdf
-265,25,Roasted Turkey Breast & Farro-Endive Salad,7,2,Tbsps,Butter,2 Tbsps Butter,pdf
-266,25,Roasted Turkey Breast & Farro-Endive Salad,8,1,,Shallot,1 Shallot,pdf
-267,25,Roasted Turkey Breast & Farro-Endive Salad,9,1,Tbsp,Honey,1 Tbsp Honey,pdf
-268,25,Roasted Turkey Breast & Farro-Endive Salad,10,1,Tbsp,Whole Grain Dijon Mustard,1 Tbsp Whole Grain Dijon Mustard,pdf
-269,26,Salmon & Honey-Glazed Carrots,1,1,bunch,Mint,1 bunch Mint,ai
-270,26,Salmon & Honey-Glazed Carrots,2,2,,Skin-On Salmon Fillets,2 Skin-On Salmon Fillets,pdf
-271,26,Salmon & Honey-Glazed Carrots,3,2,cloves,Garlic,2 cloves Garlic,pdf
-272,26,Salmon & Honey-Glazed Carrots,4,6,oz,Carrots,6 oz Carrots,pdf
-273,26,Salmon & Honey-Glazed Carrots,5,1,,Lemon,1 Lemon,pdf
-274,26,Salmon & Honey-Glazed Carrots,6,¾,lb,Yukon Gold Potatoes,¾ lb Yukon Gold Potatoes,pdf
-275,26,Salmon & Honey-Glazed Carrots,7,1,pinch,Saffron,1 Pinch Saffron,pdf
-276,26,Salmon & Honey-Glazed Carrots,8,1,Tbsp,Honey,1 Tbsp Honey,pdf
-277,26,Salmon & Honey-Glazed Carrots,9,½,cup,Plain Greek Yogurt,½ cup Plain Greek Yogurt,pdf
-278,26,Salmon & Honey-Glazed Carrots,10,½,tsp,Crushed Aleppo Pepper,½ tsp Crushed Aleppo Pepper,pdf
-279,26,Salmon & Honey-Glazed Carrots,11,½,tsp,Ground Cumin,½ tsp Ground Cumin,pdf
-280,27,Seared Chicken & Mashed Potatoes,1,½,lb,Carrots,½ lb Carrots,ai
-281,27,Seared Chicken & Mashed Potatoes,2,2,Tbsps,Maple Syrup,2 Tbsps Maple Syrup,ai
-282,27,Seared Chicken & Mashed Potatoes,3,1,Tbsp,Butter,1 Tbsp Butter,ai
-283,27,Seared Chicken & Mashed Potatoes,4,2,,"Boneless, Skinless Chicken Breasts","2 Boneless, Skinless Chicken Breasts",pdf
-284,27,Seared Chicken & Mashed Potatoes,5,¾,lb,Yukon Gold Potatoes,¾ lb Yukon Gold Potatoes,pdf
-285,27,Seared Chicken & Mashed Potatoes,6,2,Tbsps,Crème Fraîche,2 Tbsps Crème Fraîche,pdf
-286,27,Seared Chicken & Mashed Potatoes,7,1,Tbsp,Sherry Vinegar,1 Tbsp Sherry Vinegar,pdf
-287,28,Seared Steaks & Garlic Butter,1,2,,Strip Steaks,2 Strip Steaks,ai
-288,28,Seared Steaks & Garlic Butter,2,1,head,Butter Lettuce,1 head Butter Lettuce,ai
-289,28,Seared Steaks & Garlic Butter,3,2,cloves,Garlic,2 cloves Garlic,pdf
-290,28,Seared Steaks & Garlic Butter,4,2,,Russet Potatoes,2 Russet Potatoes,pdf
-291,28,Seared Steaks & Garlic Butter,5,1,bunch,Chives,1 bunch Chives,pdf
-292,28,Seared Steaks & Garlic Butter,6,3,Tbsps,Creamy Mustard Sauce,3 Tbsps Creamy Mustard Sauce,pdf
-293,28,Seared Steaks & Garlic Butter,7,2,Tbsps,Butter,2 Tbsps Butter,pdf
-294,28,Seared Steaks & Garlic Butter,8,1,Tbsp,Red Wine Vinegar,1 Tbsp Red Wine Vinegar,pdf
-295,29,Shiitake & Hoisin Beef Burgers,1,1¼,lbs,Ground Beef,1¼ lbs Ground Beef,ai
-296,29,Shiitake & Hoisin Beef Burgers,2,4,,Potato Buns,4 Potato Buns,pdf
-297,29,Shiitake & Hoisin Beef Burgers,3,2,cloves,Garlic,2 cloves Garlic,pdf
-298,29,Shiitake & Hoisin Beef Burgers,4,2,,Scallions,2 Scallions,pdf
-299,29,Shiitake & Hoisin Beef Burgers,5,2,,Sweet Potatoes,2 Sweet Potatoes,pdf
-300,29,Shiitake & Hoisin Beef Burgers,6,½,lb,Baby Bok Choy,½ lb Baby Bok Choy,pdf
-301,29,Shiitake & Hoisin Beef Burgers,7,2,Tbsps,Hoisin Sauce,2 Tbsps Hoisin Sauce,pdf
-302,29,Shiitake & Hoisin Beef Burgers,8,2,Tbsps,Sweet White Miso Paste,2 Tbsps Sweet White Miso Paste,pdf
-303,29,Shiitake & Hoisin Beef Burgers,9,½,oz,Dried Shiitake Mushrooms,½ oz Dried Shiitake Mushrooms,pdf
-304,29,Shiitake & Hoisin Beef Burgers,10,¼,cup,Mayonnaise,¼ cup Mayonnaise,pdf
-305,30,Shrimp Fra Diavolo,1,10,oz,Peeled & Deveined Shrimp,10 oz Peeled & Deveined Shrimp,ai
-306,30,Shrimp Fra Diavolo,2,½,lb,Green Cabbage,½ lb Green Cabbage,ai
-307,30,Shrimp Fra Diavolo,3,6,oz,Lumaca Rigata Pasta,6 oz Lumaca Rigata Pasta,pdf
-308,30,Shrimp Fra Diavolo,4,2,cloves,Garlic,2 cloves Garlic,pdf
-309,30,Shrimp Fra Diavolo,5,1,,8-Ounce Can Tomato Sauce,1 8-Ounce Can Tomato Sauce,pdf
-310,30,Shrimp Fra Diavolo,6,1½,tsps,Calabrian Chile Paste,1½ tsps Calabrian Chile Paste,pdf
-311,30,Shrimp Fra Diavolo,7,2,Tbsps,Crème Fraîche,2 Tbsps Crème Fraîche,pdf
-312,30,Shrimp Fra Diavolo,8,2,Tbsps,Sliced Roasted Almonds,2 Tbsps Sliced Roasted Almonds,pdf
-313,30,Shrimp Fra Diavolo,9,2,Tbsps,Verjus Blanc,2 Tbsps Verjus Blanc,pdf
-314,31,Smoked Gouda & Mushroom Flatbread,1,1,bunch,Kale,1 bunch Kale,ai
-315,31,Smoked Gouda & Mushroom Flatbread,2,1,,Endive,1 Endive,pdf
-316,31,Smoked Gouda & Mushroom Flatbread,3,2,cloves,Garlic,2 cloves Garlic,pdf
-317,31,Smoked Gouda & Mushroom Flatbread,4,2,oz,Smoked Gouda Cheese,2 oz Smoked Gouda Cheese,pdf
-318,31,Smoked Gouda & Mushroom Flatbread,5,2,oz,Fontina Or Aged Alpine Cheese,2 oz Fontina Or Aged Alpine Cheese,pdf
-319,31,Smoked Gouda & Mushroom Flatbread,6,1,,Red Onion,1 Red Onion,pdf
-320,31,Smoked Gouda & Mushroom Flatbread,7,¾,lb,Pizza Dough,¾ lb Pizza Dough,pdf
-321,31,Smoked Gouda & Mushroom Flatbread,8,4,oz,Cremini Mushrooms,4 oz Cremini Mushrooms,pdf
-322,31,Smoked Gouda & Mushroom Flatbread,9,1,,Apple,1 Apple,pdf
-323,31,Smoked Gouda & Mushroom Flatbread,10,1,Tbsp,Honey,1 Tbsp Honey,pdf
-324,31,Smoked Gouda & Mushroom Flatbread,11,1,Tbsp,Apple Cider Vinegar,1 Tbsp Apple Cider Vinegar,pdf
-325,32,Spicy Chicken Quesadillas,1,2,,"Boneless, Skinless Chicken Breasts","2 Boneless, Skinless Chicken Breasts",ai
-326,32,Spicy Chicken Quesadillas,2,4,,Flour Tortillas,4 Flour Tortillas,pdf
-327,32,Spicy Chicken Quesadillas,3,2,,Scallions,2 Scallions,pdf
-328,32,Spicy Chicken Quesadillas,4,6,oz,Chioggia Beet,6 oz Chioggia Beet,pdf
-329,32,Spicy Chicken Quesadillas,5,1,,Jalapeño Pepper,1 Jalapeño Pepper,pdf
-330,32,Spicy Chicken Quesadillas,6,1,,Lime,1 Lime,pdf
-331,32,Spicy Chicken Quesadillas,7,1,,Navel Orange,1 Navel Orange,pdf
-332,32,Spicy Chicken Quesadillas,8,3,Tbsps,Roasted Peanuts,3 Tbsps Roasted Peanuts,pdf
-333,32,Spicy Chicken Quesadillas,9,2,oz,White Cheddar Cheese,2 oz White Cheddar Cheese,pdf
-334,32,Spicy Chicken Quesadillas,10,¼,cup,Mexican Crema,¼ cup Mexican Crema,pdf
-335,32,Spicy Chicken Quesadillas,11,1,Tbsp,"Mexican Spice Blend (Ancho Chile Powder, Smoked Paprika, Garlic Powder, Ground Cumin, & Dried Mexican Oregano)","1 Tbsp Mexican Spice Blend (Ancho Chile Powder, Smoked Paprika, Garlic Powder, Ground Cumin, & Dried Mexican Oregano)",pdf
-336,33,Spicy Pork & Korean Rice Cakes,1,1,lb,Ground Pork,1 lb Ground Pork,ai
-337,33,Spicy Pork & Korean Rice Cakes,2,1,lb,Korean Rice Cakes,1 lb Korean Rice Cakes,pdf
-338,33,Spicy Pork & Korean Rice Cakes,3,2,cloves,Garlic,2 cloves Garlic,pdf
-339,33,Spicy Pork & Korean Rice Cakes,4,2,heads,Baby Bok Choy,2 heads Baby Bok Choy,pdf
-340,33,Spicy Pork & Korean Rice Cakes,5,2,Tbsps,Soy Glaze,2 Tbsps Soy Glaze,pdf
-341,33,Spicy Pork & Korean Rice Cakes,6,1½,Tbsps,Gochujang,1½ Tbsps Gochujang,pdf
-342,33,Spicy Pork & Korean Rice Cakes,7,1,,1-Inch Piece Ginger,1 1-Inch Piece Ginger,pdf
-343,33,Spicy Pork & Korean Rice Cakes,8,¼,cup,Black Bean Sauce,¼ cup Black Bean Sauce,pdf
-344,33,Spicy Pork & Korean Rice Cakes,9,¼,cup,Crème Fraîche,¼ cup Crème Fraîche,pdf
-345,33,Spicy Pork & Korean Rice Cakes,10,1,bunch,Chives,1 bunch Chives,pdf
-346,34,Sweet & Sour Vegetable Stir-Fry,1,¾,cup,Jasmine Rice,¾ cup Jasmine Rice,ai
-347,34,Sweet & Sour Vegetable Stir-Fry,2,2,,Carrots,2 Carrots,ai
-348,34,Sweet & Sour Vegetable Stir-Fry,3,2,stalks,Celery,2 stalks Celery,ai
-349,34,Sweet & Sour Vegetable Stir-Fry,4,1,head,Baby Bok Choy,1 head Baby Bok Choy,ai
-350,34,Sweet & Sour Vegetable Stir-Fry,5,1,,Orange,1 Orange,ai
-351,34,Sweet & Sour Vegetable Stir-Fry,6,1,,Lemon,1 Lemon,ai
-352,34,Sweet & Sour Vegetable Stir-Fry,7,2,cloves,Garlic,2 cloves Garlic,ai
-353,34,Sweet & Sour Vegetable Stir-Fry,8,3,oz,Radishes,3 oz Radishes,ai
-354,34,Sweet & Sour Vegetable Stir-Fry,9,1,Tbsp,Sesame Oil,1 Tbsp Sesame Oil,ai
-355,34,Sweet & Sour Vegetable Stir-Fry,10,2,Tbsps,Soy Glaze,2 Tbsps Soy Glaze,ai
-356,34,Sweet & Sour Vegetable Stir-Fry,11,2,,Cage-Free Farm Eggs,2 Cage-Free Farm Eggs,pdf
-357,34,Sweet & Sour Vegetable Stir-Fry,12,1,,1-Inch Piece Ginger,1 1-Inch Piece Ginger,pdf
-358,34,Sweet & Sour Vegetable Stir-Fry,13,1½,Tbsps,Soy Marinade,1½ Tbsps Soy Marinade,pdf
-359,34,Sweet & Sour Vegetable Stir-Fry,14,2,Tbsps,Roasted Peanuts,2 Tbsps Roasted Peanuts,pdf
-360,35,Thai Curry Chicken,1,¾,cup,Jasmine Rice,¾ cup Jasmine Rice,ai
-361,35,Thai Curry Chicken,2,10,oz,Chopped Chicken Breast,10 oz Chopped Chicken Breast,pdf
-362,35,Thai Curry Chicken,3,1¾,cups,Light Coconut Milk,1¾ cups Light Coconut Milk,pdf
-363,35,Thai Curry Chicken,4,3,,Carrots,3 Carrots,pdf
-364,35,Thai Curry Chicken,5,1,,Lime,1 Lime,pdf
-365,35,Thai Curry Chicken,6,1,head,Baby Bok Choy,1 head Baby Bok Choy,pdf
-366,35,Thai Curry Chicken,7,½,cup,Dried Shiitake Mushrooms,½ cup Dried Shiitake Mushrooms,pdf
-367,35,Thai Curry Chicken,8,2,tsps,Golden Mountain Sauce,2 tsps Golden Mountain Sauce,pdf
-368,35,Thai Curry Chicken,9,1½,Tbsps,Yellow Curry Paste,1½ Tbsps Yellow Curry Paste,pdf
-369,36,Tilapia & Black Lentil Salad,1,2,,Tilapia Fillets,2 Tilapia Fillets,ai
-370,36,Tilapia & Black Lentil Salad,2,½,cup,Black Beluga Lentils,½ cup Black Beluga Lentils,pdf
-371,36,Tilapia & Black Lentil Salad,3,2,cloves,Garlic,2 cloves Garlic,pdf
-372,36,Tilapia & Black Lentil Salad,4,1,,Lemon,1 Lemon,pdf
-373,36,Tilapia & Black Lentil Salad,5,½,lb,Broccoli,½ lb Broccoli,pdf
-374,36,Tilapia & Black Lentil Salad,6,1,bunch,Parsley,1 bunch Parsley,pdf
-375,36,Tilapia & Black Lentil Salad,7,2,Tbsps,Butter,2 Tbsps Butter,pdf
-376,36,Tilapia & Black Lentil Salad,8,1,oz,Golden Or Red Sweet Piquante Peppers,1 oz Golden Or Red Sweet Piquante Peppers,pdf
-377,36,Tilapia & Black Lentil Salad,9,1,Tbsp,Capers,1 Tbsp Capers,pdf
-378,37,Togarashi Chicken Lettuce Cups,1,10,oz,Ground Chicken,10 oz Ground Chicken,ai
-379,37,Togarashi Chicken Lettuce Cups,2,1,head,Butter Lettuce,1 head Butter Lettuce,ai
-380,37,Togarashi Chicken Lettuce Cups,3,1,,Navel Orange,1 Navel Orange,ai
-381,37,Togarashi Chicken Lettuce Cups,4,3,oz,Radishes,3 oz Radishes,ai
-382,37,Togarashi Chicken Lettuce Cups,5,2,,Scallions,2 Scallions,ai
-383,37,Togarashi Chicken Lettuce Cups,6,1,,1-Inch Piece Ginger,1 1-Inch Piece Ginger,ai
-384,37,Togarashi Chicken Lettuce Cups,7,2,cloves,Garlic,2 cloves Garlic,ai
-385,37,Togarashi Chicken Lettuce Cups,8,2,Tbsps,Coconut Aminos,2 Tbsps Coconut Aminos,ai
-386,37,Togarashi Chicken Lettuce Cups,9,1,Tbsp,Rice Vinegar,1 Tbsp Rice Vinegar,ai
-387,37,Togarashi Chicken Lettuce Cups,10,2,Tbsps,Roasted Cashews,2 Tbsps Roasted Cashews,ai
-388,37,Togarashi Chicken Lettuce Cups,11,1,tsp,"Togarashi Seasoning (Chile Pepper, Orange Peel, Sesame Seeds, Ginger, & Seaweed)","1 tsp Togarashi Seasoning (Chile Pepper, Orange Peel, Sesame Seeds, Ginger, & Seaweed)",ai
-389,37,Togarashi Chicken Lettuce Cups,12,4,oz,Cremini Mushrooms,4 oz Cremini Mushrooms,ai
-390,37,Togarashi Chicken Lettuce Cups,13,1,,Red Onion,1 Red Onion,ai
-391,37,Togarashi Chicken Lettuce Cups,14,1,,Carrot,1 Carrot,ai
-392,37,Togarashi Chicken Lettuce Cups,15,1,,Lime,1 Lime,ai
-393,38,Top Chef Ginger-Marinated Grassfed Steaks,1,2,,Grassfed Strip Steaks,2 Grassfed Strip Steaks,ai
-394,38,Top Chef Ginger-Marinated Grassfed Steaks,2,¾,cup,Jasmine Rice,¾ cup Jasmine Rice,ai
-395,38,Top Chef Ginger-Marinated Grassfed Steaks,3,1,,1-Inch Piece Ginger,1 1-Inch Piece Ginger,ai
-396,38,Top Chef Ginger-Marinated Grassfed Steaks,4,2,cloves,Garlic,2 cloves Garlic,ai
-397,38,Top Chef Ginger-Marinated Grassfed Steaks,5,2,Tbsps,Ponzu Sauce,2 Tbsps Ponzu Sauce,ai
-398,38,Top Chef Ginger-Marinated Grassfed Steaks,6,2,Tbsps,Soy Sauce,2 Tbsps Soy Sauce,ai
-399,38,Top Chef Ginger-Marinated Grassfed Steaks,7,1,tsp,Sugar,1 tsp Sugar,ai
-400,38,Top Chef Ginger-Marinated Grassfed Steaks,8,4,oz,Snow Peas,4 oz Snow Peas,ai
-401,38,Top Chef Ginger-Marinated Grassfed Steaks,9,2,,Carrots,2 Carrots,ai
-402,38,Top Chef Ginger-Marinated Grassfed Steaks,10,1,head,Baby Bok Choy,1 head Baby Bok Choy,ai
-403,38,Top Chef Ginger-Marinated Grassfed Steaks,11,2,,Scallions,2 Scallions,ai
-404,38,Top Chef Ginger-Marinated Grassfed Steaks,12,1,Tbsp,Butter,1 Tbsp Butter,ai
-405,39,Top Chef Seared Grassfed Steaks,1,¾,cup,Jasmine Rice,¾ cup Jasmine Rice,ai
-406,39,Top Chef Seared Grassfed Steaks,2,1,,Shallot,1 Shallot,ai
-407,39,Top Chef Seared Grassfed Steaks,3,2,heads,Baby Bok Choy,2 heads Baby Bok Choy,ai
-408,39,Top Chef Seared Grassfed Steaks,4,1,,Lime,1 Lime,ai
-409,39,Top Chef Seared Grassfed Steaks,5,6,oz,Radishes,6 oz Radishes,ai
-410,39,Top Chef Seared Grassfed Steaks,6,2,Tbsps,Ponzu Sauce,2 Tbsps Ponzu Sauce,ai
-411,39,Top Chef Seared Grassfed Steaks,7,1,Tbsp,Soy Marinade,1 Tbsp Soy Marinade,ai
-412,39,Top Chef Seared Grassfed Steaks,8,1,Tbsp,Sugar,1 Tbsp Sugar,ai
-413,39,Top Chef Seared Grassfed Steaks,9,2,,Grassfed Strip Steaks,2 Grassfed Strip Steaks,pdf
-414,39,Top Chef Seared Grassfed Steaks,10,4,oz,Cremini Mushrooms,4 oz Cremini Mushrooms,pdf
-415,39,Top Chef Seared Grassfed Steaks,11,1,,1-Inch Piece Ginger,1 1-Inch Piece Ginger,pdf
-416,39,Top Chef Seared Grassfed Steaks,12,2,Tbsps,Sweet Chili Sauce,2 Tbsps Sweet Chili Sauce,pdf
-417,40,Tuscan Chicken & Green Lentil Stew,1,2,,"Boneless, Skinless Chicken Breasts","2 Boneless, Skinless Chicken Breasts",pdf
-418,40,Tuscan Chicken & Green Lentil Stew,2,2,,Carrots,2 Carrots,pdf
-419,40,Tuscan Chicken & Green Lentil Stew,3,1,,Red Onion,1 Red Onion,pdf
-420,40,Tuscan Chicken & Green Lentil Stew,4,2,cloves,Garlic,2 cloves Garlic,pdf
-421,40,Tuscan Chicken & Green Lentil Stew,5,½,cup,French Green Lentils,½ cup French Green Lentils,pdf
-422,40,Tuscan Chicken & Green Lentil Stew,6,1,bunch,Collard Greens,1 bunch Collard Greens,pdf
-423,40,Tuscan Chicken & Green Lentil Stew,7,2,Tbsps,Tomato Paste,2 Tbsps Tomato Paste,pdf
-424,40,Tuscan Chicken & Green Lentil Stew,8,¼,tsp,Crushed Red Pepper Flakes,¼ tsp Crushed Red Pepper Flakes,pdf
-425,40,Tuscan Chicken & Green Lentil Stew,9,1,Tbsp,Capers,1 Tbsp Capers,pdf
-426,40,Tuscan Chicken & Green Lentil Stew,10,1,Tbsp,Apple Cider Vinegar,1 Tbsp Apple Cider Vinegar,pdf
-427,40,Tuscan Chicken & Green Lentil Stew,11,2,Tbsps,Crumbled Goat Cheese,2 Tbsps Crumbled Goat Cheese,pdf
-428,40,Tuscan Chicken & Green Lentil Stew,12,1,Tbsp,"Tuscan Spice Blend (Ground Fennel Seeds, Whole Fennel Seeds, Ground Rosemary, & Ground Sage)","1 Tbsp Tuscan Spice Blend (Ground Fennel Seeds, Whole Fennel Seeds, Ground Rosemary, & Ground Sage)",pdf
+1,1,"Ancho-Orange Chicken",1,¾,cup,"Jasmine Rice","¾ cup Jasmine Rice",ai
+2,1,"Ancho-Orange Chicken",2,¾,lb,Carrots,"¾ lb Carrots",ai
+3,1,"Ancho-Orange Chicken",3,2,cloves,Garlic,"2 cloves Garlic",ai
+4,1,"Ancho-Orange Chicken",4,1,bunch,Kale,"1 bunch Kale",ai
+5,1,"Ancho-Orange Chicken",5,1,,Lime,"1 Lime",ai
+6,1,"Ancho-Orange Chicken",6,1,,Orange,"1 Orange",ai
+7,1,"Ancho-Orange Chicken",7,2,Tbsps,Butter,"2 Tbsps Butter",ai
+8,1,"Ancho-Orange Chicken",8,4,,"Boneless, Skinless Chicken Breasts","4 Boneless, Skinless Chicken Breasts",pdf
+9,1,"Ancho-Orange Chicken",9,1,Tbsp,"Ancho Chile Paste","1 Tbsp Ancho Chile Paste",pdf
+10,1,"Ancho-Orange Chicken",10,2,Tbsps,"Crème Fraîche","2 Tbsps Crème Fraîche",pdf
+11,1,"Ancho-Orange Chicken",11,3,Tbsps,"Golden Raisins","3 Tbsps Golden Raisins",pdf
+12,2,"Beef Medallions & Mushroom Sauce",1,2,,"Beef Medallions","2 Beef Medallions",ai
+13,2,"Beef Medallions & Mushroom Sauce",2,2,cloves,Garlic,"2 cloves Garlic",ai
+14,2,"Beef Medallions & Mushroom Sauce",3,1,,Shallot,"1 Shallot",ai
+15,2,"Beef Medallions & Mushroom Sauce",4,1,bunch,Kale,"1 bunch Kale",ai
+16,2,"Beef Medallions & Mushroom Sauce",5,2,Tbsps,Butter,"2 Tbsps Butter",ai
+17,2,"Beef Medallions & Mushroom Sauce",6,1,Tbsp,"Dijon Mustard","1 Tbsp Dijon Mustard",ai
+18,2,"Beef Medallions & Mushroom Sauce",7,2,Tbsps,"Verjus Blanc","2 Tbsps Verjus Blanc",ai
+19,2,"Beef Medallions & Mushroom Sauce",8,4,oz,"Cremini Mushrooms","4 oz Cremini Mushrooms",pdf
+20,2,"Beef Medallions & Mushroom Sauce",9,¾,lb,"Yukon Gold Potatoes","¾ lb Yukon Gold Potatoes",pdf
+21,3,"Broccoli & Basil Pesto Sandwiches",1,2,oz,"Asiago Cheese","2 oz Asiago Cheese",ai
+22,3,"Broccoli & Basil Pesto Sandwiches",2,1,piece,"Focaccia Bread","1 Piece Focaccia Bread",pdf
+23,3,"Broccoli & Basil Pesto Sandwiches",3,1,,"8-Ounce Can Tomato Sauce","1 8-Ounce Can Tomato Sauce",pdf
+24,3,"Broccoli & Basil Pesto Sandwiches",4,½,lb,"Fresh Mozzarella Cheese","½ lb Fresh Mozzarella Cheese",pdf
+25,3,"Broccoli & Basil Pesto Sandwiches",5,2,,Clementines,"2 Clementines",pdf
+26,3,"Broccoli & Basil Pesto Sandwiches",6,2,cloves,Garlic,"2 cloves Garlic",pdf
+27,3,"Broccoli & Basil Pesto Sandwiches",7,2,,"Romaine Lettuce Hearts","2 Romaine Lettuce Hearts",pdf
+28,3,"Broccoli & Basil Pesto Sandwiches",8,1,lb,Broccoli,"1 lb Broccoli",pdf
+29,3,"Broccoli & Basil Pesto Sandwiches",9,1,oz,"Golden Or Red Sweet Piquante Peppers","1 oz Golden Or Red Sweet Piquante Peppers",pdf
+30,3,"Broccoli & Basil Pesto Sandwiches",10,2,Tbsps,"Crème Fraîche","2 Tbsps Crème Fraîche",pdf
+31,3,"Broccoli & Basil Pesto Sandwiches",11,1,Tbsp,"Dijon Mustard","1 Tbsp Dijon Mustard",pdf
+32,3,"Broccoli & Basil Pesto Sandwiches",12,½,cup,"Basil & Cashew Pesto (Contains Pine Nuts)","½ cup Basil & Cashew Pesto (Contains Pine Nuts)",pdf
+33,3,"Broccoli & Basil Pesto Sandwiches",13,⅓,cup,"Shaved Parmesan Cheese","⅓ cup Shaved Parmesan Cheese",pdf
+34,3,"Broccoli & Basil Pesto Sandwiches",14,1,Tbsp,"Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)","1 Tbsp Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)",pdf
+35,4,"Broccoli & Mozzarella Calzones",1,2,Tbsps,Mayonnaise,"2 Tbsps Mayonnaise",ai
+36,4,"Broccoli & Mozzarella Calzones",2,1½,lbs,"Pizza Dough","1½ lbs Pizza Dough",pdf
+37,4,"Broccoli & Mozzarella Calzones",3,3,cloves,Garlic,"3 cloves Garlic",pdf
+38,4,"Broccoli & Mozzarella Calzones",4,1,,"Romaine Lettuce Heart","1 Romaine Lettuce Heart",pdf
+39,4,"Broccoli & Mozzarella Calzones",5,1,lb,Broccoli,"1 lb Broccoli",pdf
+40,4,"Broccoli & Mozzarella Calzones",6,1,cup,"Part-Skim Ricotta Cheese","1 cup Part-Skim Ricotta Cheese",pdf
+41,4,"Broccoli & Mozzarella Calzones",7,1,,"8-Ounce Can Tomato Sauce","1 8-Ounce Can Tomato Sauce",pdf
+42,4,"Broccoli & Mozzarella Calzones",8,½,lb,"Fresh Mozzarella Cheese","½ lb Fresh Mozzarella Cheese",pdf
+43,4,"Broccoli & Mozzarella Calzones",9,¼,cup,"Grated Parmesan Cheese","¼ cup Grated Parmesan Cheese",pdf
+44,4,"Broccoli & Mozzarella Calzones",10,2,oz,"Black Cerignola Olives","2 oz Black Cerignola Olives",pdf
+45,4,"Broccoli & Mozzarella Calzones",11,1,Tbsp,"Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)","1 Tbsp Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)",pdf
+46,4,"Broccoli & Mozzarella Calzones",12,1,,Lemon,"1 Lemon",pdf
+47,5,"Bucatini Alfredo",1,6,oz,"Bucatini Pasta","6 oz Bucatini Pasta",ai
+48,5,"Bucatini Alfredo",2,½,lb,Broccoli,"½ lb Broccoli",ai
+49,5,"Bucatini Alfredo",3,2,cloves,Garlic,"2 cloves Garlic",ai
+50,5,"Bucatini Alfredo",4,¼,cup,"Heavy Cream","¼ cup Heavy Cream",ai
+51,5,"Bucatini Alfredo",5,2,Tbsps,"Verjus Blanc","2 Tbsps Verjus Blanc",ai
+52,5,"Bucatini Alfredo",6,2,Tbsps,"Crème Fraîche","2 Tbsps Crème Fraîche",pdf
+53,5,"Bucatini Alfredo",7,¼,tsp,"Crushed Red Pepper Flakes","¼ tsp Crushed Red Pepper Flakes",pdf
+54,5,"Bucatini Alfredo",8,3,Tbsps,"All-Purpose Flour","3 Tbsps All-Purpose Flour",pdf
+55,5,"Bucatini Alfredo",9,¼,cup,"Grated Pecorino Cheese","¼ cup Grated Pecorino Cheese",pdf
+56,6,"Bucatini & Tomato Sauce",1,6,oz,"Bucatini Pasta","6 oz Bucatini Pasta",pdf
+57,6,"Bucatini & Tomato Sauce",2,1,,"14-Ounce Can Datterini Tomatoes","1 14-Ounce Can Datterini Tomatoes",pdf
+58,6,"Bucatini & Tomato Sauce",3,2,cloves,Garlic,"2 cloves Garlic",pdf
+59,6,"Bucatini & Tomato Sauce",4,2,Tbsps,Butter,"2 Tbsps Butter",pdf
+60,6,"Bucatini & Tomato Sauce",5,1,Tbsp,Capers,"1 Tbsp Capers",pdf
+61,6,"Bucatini & Tomato Sauce",6,1,lb,Broccoli,"1 lb Broccoli",pdf
+62,6,"Bucatini & Tomato Sauce",7,¾,oz,"Grana Padano Cheese","¾ oz Grana Padano Cheese",pdf
+63,6,"Bucatini & Tomato Sauce",8,1,oz,"Kalamata Olives","1 oz Kalamata Olives",pdf
+64,6,"Bucatini & Tomato Sauce",9,¼,tsp,"Crushed Red Pepper Flakes","¼ tsp Crushed Red Pepper Flakes",pdf
+65,6,"Bucatini & Tomato Sauce",10,1,Tbsp,"Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)","1 Tbsp Italian Seasoning (Whole Dried Basil, Sage, Oregano, Savory, Rosemary, Thyme, & Marjoram)",pdf
+66,7,"Cheesy Enchiladas Rojas",1,1,bunch,Kale,"1 bunch Kale",ai
+67,7,"Cheesy Enchiladas Rojas",2,1,,Lime,"1 Lime",ai
+68,7,"Cheesy Enchiladas Rojas",3,8,,"Flour Tortillas","8 Flour Tortillas",pdf
+69,7,"Cheesy Enchiladas Rojas",4,¾,cup,"Jasmine Rice","¾ cup Jasmine Rice",pdf
+70,7,"Cheesy Enchiladas Rojas",5,1,,"28-Ounce Can Whole Peeled Tomatoes","1 28-Ounce Can Whole Peeled Tomatoes",pdf
+71,7,"Cheesy Enchiladas Rojas",6,4,oz,"Cremini Mushrooms","4 oz Cremini Mushrooms",pdf
+72,7,"Cheesy Enchiladas Rojas",7,3,cloves,Garlic,"3 cloves Garlic",pdf
+73,7,"Cheesy Enchiladas Rojas",8,1,,"Yellow Onion","1 Yellow Onion",pdf
+74,7,"Cheesy Enchiladas Rojas",9,1,bunch,Chives,"1 bunch Chives",pdf
+75,7,"Cheesy Enchiladas Rojas",10,2,Tbsps,"Ancho Chile Paste","2 Tbsps Ancho Chile Paste",pdf
+76,7,"Cheesy Enchiladas Rojas",11,1,Tbsp,"Mexican Spice Blend (Ancho Chile Powder, Sweet Paprika, Garlic Powder, Ground Cumin, & Whole Mexican Oregano)","1 Tbsp Mexican Spice Blend (Ancho Chile Powder, Sweet Paprika, Garlic Powder, Ground Cumin, & Whole Mexican Oregano)",pdf
+77,7,"Cheesy Enchiladas Rojas",12,½,lb,"White Cheddar Cheese","½ lb White Cheddar Cheese",pdf
+78,7,"Cheesy Enchiladas Rojas",13,½,cup,"Sour Cream","½ cup Sour Cream",pdf
+79,8,"Crispy Fish Sandwiches",1,1½,lbs,"Sweet Potatoes","1½ lbs Sweet Potatoes",ai
+80,8,"Crispy Fish Sandwiches",2,4,,"Potato Rolls","4 Potato Rolls",ai
+81,8,"Crispy Fish Sandwiches",3,¼,cup,Mayonnaise,"¼ cup Mayonnaise",ai
+82,8,"Crispy Fish Sandwiches",4,21,oz,"Wild Alaskan Pollock Fillets","21 oz Wild Alaskan Pollock Fillets",pdf
+83,8,"Crispy Fish Sandwiches",5,2,,"Cage-Free Farm Eggs","2 Cage-Free Farm Eggs",pdf
+84,8,"Crispy Fish Sandwiches",6,2,Tbsps,"Sweet Pickle Relish","2 Tbsps Sweet Pickle Relish",pdf
+85,8,"Crispy Fish Sandwiches",7,1,,"Romaine Lettuce Heart","1 Romaine Lettuce Heart",pdf
+86,8,"Crispy Fish Sandwiches",8,1,Tbsp,"Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)","1 Tbsp Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)",pdf
+87,8,"Crispy Fish Sandwiches",9,1¼,cups,"Panko Breadcrumbs","1¼ cups Panko Breadcrumbs",pdf
+88,8,"Crispy Fish Sandwiches",10,¼,cup,"Creamy Mustard Sauce","¼ cup Creamy Mustard Sauce",pdf
+89,9,"General Tso's Chicken",1,10,oz,"Chopped Chicken Breast","10 oz Chopped Chicken Breast",pdf
+90,9,"General Tso's Chicken",2,1,head,"Baby Bok Choy","1 head Baby Bok Choy",pdf
+91,9,"General Tso's Chicken",3,¾,cup,"Jasmine Rice","¾ cup Jasmine Rice",pdf
+92,9,"General Tso's Chicken",4,2,cloves,Garlic,"2 cloves Garlic",pdf
+93,9,"General Tso's Chicken",5,1,Tbsp,"Rice Vinegar","1 Tbsp Rice Vinegar",pdf
+94,9,"General Tso's Chicken",6,1,,"1-Inch Piece Ginger","1 1-Inch Piece Ginger",pdf
+95,9,"General Tso's Chicken",7,1,tsp,Sriracha,"1 tsp Sriracha",pdf
+96,9,"General Tso's Chicken",8,1,Tbsp,Honey,"1 Tbsp Honey",pdf
+97,9,"General Tso's Chicken",9,1,Tbsp,"Sesame Oil","1 Tbsp Sesame Oil",pdf
+98,9,"General Tso's Chicken",10,¼,cup,Cornstarch,"¼ cup Cornstarch",pdf
+99,9,"General Tso's Chicken",11,2,Tbsps,"Hoisin Sauce","2 Tbsps Hoisin Sauce",pdf
+100,10,"Hoisin-Glazed Pork Chops",1,½,lb,"Green Cabbage","½ lb Green Cabbage",ai
+101,10,"Hoisin-Glazed Pork Chops",2,1,Tbsp,"Rice Vinegar","1 Tbsp Rice Vinegar",ai
+102,10,"Hoisin-Glazed Pork Chops",3,4,,"Boneless, Center-Cut Pork Chops","4 Boneless, Center-Cut Pork Chops",pdf
+103,10,"Hoisin-Glazed Pork Chops",4,2,,Carrots,"2 Carrots",pdf
+104,10,"Hoisin-Glazed Pork Chops",5,1,bunch,Chives,"1 bunch Chives",pdf
+105,10,"Hoisin-Glazed Pork Chops",6,2,Tbsps,Tahini,"2 Tbsps Tahini",pdf
+106,10,"Hoisin-Glazed Pork Chops",7,2,Tbsps,"Soy Sauce","2 Tbsps Soy Sauce",pdf
+107,10,"Hoisin-Glazed Pork Chops",8,¾,lb,"Fresh Wonton Noodles","¾ lb Fresh Wonton Noodles",pdf
+108,10,"Hoisin-Glazed Pork Chops",9,2,tsps,"Sambal Oelek","2 tsps Sambal Oelek",pdf
+109,10,"Hoisin-Glazed Pork Chops",10,1,,"1-Inch Piece Ginger","1 1-Inch Piece Ginger",pdf
+110,10,"Hoisin-Glazed Pork Chops",11,¼,cup,"Hoisin Sauce","¼ cup Hoisin Sauce",pdf
+111,11,"Honey-Butter Barramundi",1,4,,Carrots,"4 Carrots",ai
+112,11,"Honey-Butter Barramundi",2,6,oz,Radishes,"6 oz Radishes",ai
+113,11,"Honey-Butter Barramundi",3,1,,Lemon,"1 Lemon",ai
+114,11,"Honey-Butter Barramundi",4,2,cloves,Garlic,"2 cloves Garlic",ai
+115,11,"Honey-Butter Barramundi",5,1,bunch,Parsley,"1 bunch Parsley",ai
+116,11,"Honey-Butter Barramundi",6,2,Tbsps,Butter,"2 Tbsps Butter",ai
+117,11,"Honey-Butter Barramundi",7,2,Tbsps,Honey,"2 Tbsps Honey",ai
+118,11,"Honey-Butter Barramundi",8,4,,"Skin-On Barramundi Fillets","4 Skin-On Barramundi Fillets",pdf
+119,11,"Honey-Butter Barramundi",9,½,cup,"Plain Greek Yogurt","½ cup Plain Greek Yogurt",pdf
+120,11,"Honey-Butter Barramundi",10,1⅛,lbs,"Yukon Gold Potatoes","1⅛ lbs Yukon Gold Potatoes",pdf
+121,11,"Honey-Butter Barramundi",11,1,Tbsp,"Za'atar Seasoning (Ground Sumac, Sesame Seeds, Salt, Ground Thyme, Whole Dried Oregano, & Crushed Aleppo Pepper)","1 Tbsp Za'atar Seasoning (Ground Sumac, Sesame Seeds, Salt, Ground Thyme, Whole Dried Oregano, & Crushed Aleppo Pepper)",pdf
+122,12,"Kale & Ricotta Quiche",1,1,,"Pie Crust (in Tin)","1 Pie Crust (in Tin)",ai
+123,12,"Kale & Ricotta Quiche",2,1,bunch,Kale,"1 bunch Kale",ai
+124,12,"Kale & Ricotta Quiche",3,2,cloves,Garlic,"2 cloves Garlic",ai
+125,12,"Kale & Ricotta Quiche",4,1,,Shallot,"1 Shallot",ai
+126,12,"Kale & Ricotta Quiche",5,½,cup,"Heavy Cream","½ cup Heavy Cream",ai
+127,12,"Kale & Ricotta Quiche",6,1,,Lemon,"1 Lemon",ai
+128,12,"Kale & Ricotta Quiche",7,1,,Apple,"1 Apple",ai
+129,12,"Kale & Ricotta Quiche",8,4,,"Cage-Free Farm Eggs","4 Cage-Free Farm Eggs",pdf
+130,12,"Kale & Ricotta Quiche",9,1,cup,"Part-Skim Ricotta Cheese","1 cup Part-Skim Ricotta Cheese",pdf
+131,12,"Kale & Ricotta Quiche",10,1,,"Romaine Lettuce Heart","1 Romaine Lettuce Heart",pdf
+132,12,"Kale & Ricotta Quiche",11,2,Tbsps,"Sliced Roasted Almonds","2 Tbsps Sliced Roasted Almonds",pdf
+133,12,"Kale & Ricotta Quiche",12,1,Tbsp,"Cajun Spice Blend (Smoked Paprika, Ground Yellow Mustard, Onion Powder, Garlic Powder, Whole Dried Oregano, Whole Dried Thyme, & Cayenne Pepper)","1 Tbsp Cajun Spice Blend (Smoked Paprika, Ground Yellow Mustard, Onion Powder, Garlic Powder, Whole Dried Oregano, Whole Dried Thyme, & Cayenne Pepper)",pdf
+134,12,"Kale & Ricotta Quiche",13,2,Tbsps,"Crème Fraîche","2 Tbsps Crème Fraîche",pdf
+135,13,"Mexican-Spiced Barramundi",1,2,,"Skin-On Barramundi Fillets","2 Skin-On Barramundi Fillets",ai
+136,13,"Mexican-Spiced Barramundi",2,1,,"Sweet Potato","1 Sweet Potato",ai
+137,13,"Mexican-Spiced Barramundi",3,1,bunch,Kale,"1 bunch Kale",ai
+138,13,"Mexican-Spiced Barramundi",4,1,,Avocado,"1 Avocado",ai
+139,13,"Mexican-Spiced Barramundi",5,1,,Lime,"1 Lime",ai
+140,13,"Mexican-Spiced Barramundi",6,1,,"Navel Orange","1 Navel Orange",ai
+141,13,"Mexican-Spiced Barramundi",7,1,clove,Garlic,"1 clove Garlic",ai
+142,13,"Mexican-Spiced Barramundi",8,2,Tbsps,"Roasted Pepitas","2 Tbsps Roasted Pepitas",ai
+143,13,"Mexican-Spiced Barramundi",9,1,Tbsp,"Mexican Spice Blend (Ancho Chile Powder, Smoked Paprika, Garlic Powder, Ground Cumin, & Dried Mexican Oregano)","1 Tbsp Mexican Spice Blend (Ancho Chile Powder, Smoked Paprika, Garlic Powder, Ground Cumin, & Dried Mexican Oregano)",ai
+144,14,"Mushroom & Potato Tacos",1,4,,"Flour Tortillas","4 Flour Tortillas",pdf
+145,14,"Mushroom & Potato Tacos",2,3,oz,Radishes,"3 oz Radishes",pdf
+146,14,"Mushroom & Potato Tacos",3,1,,Orange,"1 Orange",pdf
+147,14,"Mushroom & Potato Tacos",4,¾,lb,"Yukon Gold Potatoes","¾ lb Yukon Gold Potatoes",pdf
+148,14,"Mushroom & Potato Tacos",5,6,oz,"Cremini Mushrooms","6 oz Cremini Mushrooms",pdf
+149,14,"Mushroom & Potato Tacos",6,1,,Shallot,"1 Shallot",pdf
+150,14,"Mushroom & Potato Tacos",7,3,Tbsps,"Roasted Peanuts","3 Tbsps Roasted Peanuts",pdf
+151,14,"Mushroom & Potato Tacos",8,¼,cup,"Sour Cream","¼ cup Sour Cream",pdf
+152,14,"Mushroom & Potato Tacos",9,1,oz,"Sliced Pickled Jalapeño Pepper","1 oz Sliced Pickled Jalapeño Pepper",pdf
+153,14,"Mushroom & Potato Tacos",10,1,oz,"Golden Or Red Sweet Piquante Peppers","1 oz Golden Or Red Sweet Piquante Peppers",pdf
+154,14,"Mushroom & Potato Tacos",11,1,Tbsp,"Spanish Spice Blend (Smoked Paprika, Ground Cumin, Ground Coriander, Dried Mexican Oregano, Cayenne Pepper, & Ground Cinnamon)","1 Tbsp Spanish Spice Blend (Smoked Paprika, Ground Cumin, Ground Coriander, Dried Mexican Oregano, Cayenne Pepper, & Ground Cinnamon)",pdf
+155,14,"Mushroom & Potato Tacos",12,1,,"Romaine Lettuce Heart","1 Romaine Lettuce Heart",pdf
+156,14,"Mushroom & Potato Tacos",13,2,Tbsps,"Rice Vinegar","2 Tbsps Rice Vinegar",pdf
+157,15,"Parmesan-Crusted Chicken",1,1½,lbs,"Sweet Potatoes","1½ lbs Sweet Potatoes",ai
+158,15,"Parmesan-Crusted Chicken",2,1,lb,Broccoli,"1 lb Broccoli",ai
+159,15,"Parmesan-Crusted Chicken",3,1,,Lemon,"1 Lemon",ai
+160,15,"Parmesan-Crusted Chicken",4,2,Tbsps,Butter,"2 Tbsps Butter",ai
+161,15,"Parmesan-Crusted Chicken",5,¼,cup,Mayonnaise,"¼ cup Mayonnaise",ai
+162,15,"Parmesan-Crusted Chicken",6,4,,"Boneless, Skinless Chicken Breasts","4 Boneless, Skinless Chicken Breasts",pdf
+163,15,"Parmesan-Crusted Chicken",7,¼,cup,"All-Purpose Flour","¼ cup All-Purpose Flour",pdf
+164,15,"Parmesan-Crusted Chicken",8,½,cup,"Grated Parmesan Cheese","½ cup Grated Parmesan Cheese",pdf
+165,15,"Parmesan-Crusted Chicken",9,1,Tbsp,"Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)","1 Tbsp Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)",pdf
+166,16,"Pimento Cheeseburgers",1,10,oz,"Ground Beef","10 oz Ground Beef",ai
+167,16,"Pimento Cheeseburgers",2,2,,"Potato Buns","2 Potato Buns",pdf
+168,16,"Pimento Cheeseburgers",3,1,,"Sweet Potato","1 Sweet Potato",pdf
+169,16,"Pimento Cheeseburgers",4,2,oz,"Cheddar Cheese","2 oz Cheddar Cheese",pdf
+170,16,"Pimento Cheeseburgers",5,1,oz,"Sweet Piquante Peppers","1 oz Sweet Piquante Peppers",pdf
+171,16,"Pimento Cheeseburgers",6,2,Tbsps,Mayonnaise,"2 Tbsps Mayonnaise",pdf
+172,16,"Pimento Cheeseburgers",7,1,tsp,"Pimento Cheese Spice Blend (Garlic Powder, Ground Yellow Mustard, & Sugar)","1 tsp Pimento Cheese Spice Blend (Garlic Powder, Ground Yellow Mustard, & Sugar)",pdf
+173,17,"Pork Chorizo Tacos",1,6,,"Flour Tortillas","6 Flour Tortillas",ai
+174,17,"Pork Chorizo Tacos",2,½,lb,"Green Cabbage","½ lb Green Cabbage",ai
+175,17,"Pork Chorizo Tacos",3,1,,Orange,"1 Orange",ai
+176,17,"Pork Chorizo Tacos",4,1,,Lime,"1 Lime",ai
+177,17,"Pork Chorizo Tacos",5,3,oz,Radishes,"3 oz Radishes",ai
+178,17,"Pork Chorizo Tacos",6,1,clove,Garlic,"1 clove Garlic",ai
+179,17,"Pork Chorizo Tacos",7,¾,lb,"Yukon Gold Potatoes","¾ lb Yukon Gold Potatoes",pdf
+180,17,"Pork Chorizo Tacos",8,10,oz,"Ground Pork Chorizo","10 oz Ground Pork Chorizo",pdf
+181,17,"Pork Chorizo Tacos",9,2,Tbsps,"Crème Fraîche","2 Tbsps Crème Fraîche",pdf
+182,17,"Pork Chorizo Tacos",10,2,Tbsps,"Grated Cotija Cheese","2 Tbsps Grated Cotija Cheese",pdf
+183,18,"Roasted Broccoli & Fregola Sarda Salad",1,2,,"Cage-Free Farm Eggs","2 Cage-Free Farm Eggs",pdf
+184,18,"Roasted Broccoli & Fregola Sarda Salad",2,½,cup,"Fregola Sarda Pasta","½ cup Fregola Sarda Pasta",pdf
+185,18,"Roasted Broccoli & Fregola Sarda Salad",3,1,clove,Garlic,"1 clove Garlic",pdf
+186,18,"Roasted Broccoli & Fregola Sarda Salad",4,1,lb,Broccoli,"1 lb Broccoli",pdf
+187,18,"Roasted Broccoli & Fregola Sarda Salad",5,1,,"Red Onion","1 Red Onion",pdf
+188,18,"Roasted Broccoli & Fregola Sarda Salad",6,1,bunch,Mint,"1 bunch Mint",pdf
+189,18,"Roasted Broccoli & Fregola Sarda Salad",7,2,Tbsps,Tahini,"2 Tbsps Tahini",pdf
+190,18,"Roasted Broccoli & Fregola Sarda Salad",8,1,oz,"Pecorino Romano Cheese","1 oz Pecorino Romano Cheese",pdf
+191,18,"Roasted Broccoli & Fregola Sarda Salad",9,1,Tbsp,"Za'atar Seasoning (Ground Sumac, Sesame Seeds, Salt, Ground Thyme, Whole Dried Oregano, & Crushed Aleppo Pepper)","1 Tbsp Za'atar Seasoning (Ground Sumac, Sesame Seeds, Salt, Ground Thyme, Whole Dried Oregano, & Crushed Aleppo Pepper)",pdf
+192,18,"Roasted Broccoli & Fregola Sarda Salad",10,3,Tbsps,"Roasted Almonds","3 Tbsps Roasted Almonds",pdf
+193,18,"Roasted Broccoli & Fregola Sarda Salad",11,1,,Lemon,"1 Lemon",pdf
+194,19,"Roasted Brussels Sprout & Freekeh Salad",1,⅔,cup,"Cracked Freekeh","⅔ cup Cracked Freekeh",pdf
+195,19,"Roasted Brussels Sprout & Freekeh Salad",2,½,cup,"Sheep's Milk Yogurt","½ cup Sheep's Milk Yogurt",pdf
+196,19,"Roasted Brussels Sprout & Freekeh Salad",3,2,,Carrots,"2 Carrots",pdf
+197,19,"Roasted Brussels Sprout & Freekeh Salad",4,2,cloves,Garlic,"2 cloves Garlic",pdf
+198,19,"Roasted Brussels Sprout & Freekeh Salad",5,1,,Lemon,"1 Lemon",pdf
+199,19,"Roasted Brussels Sprout & Freekeh Salad",6,1,bunch,Mint,"1 bunch Mint",pdf
+200,19,"Roasted Brussels Sprout & Freekeh Salad",7,2,,"Dried Medjool Dates","2 Dried Medjool Dates",pdf
+201,19,"Roasted Brussels Sprout & Freekeh Salad",8,2,Tbsps,"Pickled Peruvian Peppers","2 Tbsps Pickled Peruvian Peppers",pdf
+202,19,"Roasted Brussels Sprout & Freekeh Salad",9,1¾,oz,"Barrel-Aged Feta Cheese","1¾ oz Barrel-Aged Feta Cheese",pdf
+203,19,"Roasted Brussels Sprout & Freekeh Salad",10,2,Tbsps,"Roasted Almonds","2 Tbsps Roasted Almonds",pdf
+204,19,"Roasted Brussels Sprout & Freekeh Salad",11,¼,tsp,"Crushed Red Pepper Flakes","¼ tsp Crushed Red Pepper Flakes",pdf
+205,19,"Roasted Brussels Sprout & Freekeh Salad",12,¾,lb,"Brussels Sprouts","¾ lb Brussels Sprouts",pdf
+206,20,"Roasted Cauliflower Salad",1,1,bunch,Kale,"1 bunch Kale",ai
+207,20,"Roasted Cauliflower Salad",2,2,,"Cage-Free Farm Eggs","2 Cage-Free Farm Eggs",pdf
+208,20,"Roasted Cauliflower Salad",3,2,cloves,Garlic,"2 cloves Garlic",pdf
+209,20,"Roasted Cauliflower Salad",4,1,head,Cauliflower,"1 head Cauliflower",pdf
+210,20,"Roasted Cauliflower Salad",5,1,,Lemon,"1 Lemon",pdf
+211,20,"Roasted Cauliflower Salad",6,2,Tbsps,Butter,"2 Tbsps Butter",pdf
+212,20,"Roasted Cauliflower Salad",7,1,,Shallot,"1 Shallot",pdf
+213,20,"Roasted Cauliflower Salad",8,1,Tbsp,Capers,"1 Tbsp Capers",pdf
+214,20,"Roasted Cauliflower Salad",9,3,Tbsps,"Panko Breadcrumbs","3 Tbsps Panko Breadcrumbs",pdf
+215,20,"Roasted Cauliflower Salad",10,¼,cup,"Grated Parmesan Cheese","¼ cup Grated Parmesan Cheese",pdf
+216,21,"Roasted Chicken & Fall Vegetables",1,2,,"Half Chickens","2 Half Chickens",ai
+217,21,"Roasted Chicken & Fall Vegetables",2,1,lb,"Sweet Potatoes","1 lb Sweet Potatoes",pdf
+218,21,"Roasted Chicken & Fall Vegetables",3,4,oz,Cranberries,"4 oz Cranberries",pdf
+219,21,"Roasted Chicken & Fall Vegetables",4,½,lb,"Brussels Sprouts","½ lb Brussels Sprouts",pdf
+220,21,"Roasted Chicken & Fall Vegetables",5,2,Tbsps,"Apple Cider Vinegar","2 Tbsps Apple Cider Vinegar",pdf
+221,21,"Roasted Chicken & Fall Vegetables",6,2,Tbsps,Sugar,"2 Tbsps Sugar",pdf
+222,21,"Roasted Chicken & Fall Vegetables",7,1,,"1-Inch Piece Ginger","1 1-Inch Piece Ginger",pdf
+223,21,"Roasted Chicken & Fall Vegetables",8,¼,cup,"Roasted Walnuts","¼ cup Roasted Walnuts",pdf
+224,21,"Roasted Chicken & Fall Vegetables",9,1,Tbsp,"Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)","1 Tbsp Weeknight Hero Spice Blend (Garlic Powder, Onion Powder, Smoked Paprika, & Whole Dried Parsley)",pdf
+225,22,"Roasted Pork & Broccoli",1,1,,"Pork Tenderloin","1 Pork Tenderloin",ai
+226,22,"Roasted Pork & Broccoli",2,½,lb,Broccoli,"½ lb Broccoli",ai
+227,22,"Roasted Pork & Broccoli",3,2,cloves,Garlic,"2 cloves Garlic",ai
+228,22,"Roasted Pork & Broccoli",4,1,,Apple,"1 Apple",ai
+229,22,"Roasted Pork & Broccoli",5,2,oz,"Fontina Cheese","2 oz Fontina Cheese",ai
+230,22,"Roasted Pork & Broccoli",6,¼,cup,Milk,"¼ cup Milk",ai
+231,22,"Roasted Pork & Broccoli",7,3,Tbsps,"Panko Breadcrumbs","3 Tbsps Panko Breadcrumbs",pdf
+232,22,"Roasted Pork & Broccoli",8,2,Tbsps,"All-Purpose Flour","2 Tbsps All-Purpose Flour",pdf
+233,22,"Roasted Pork & Broccoli",9,1,Tbsp,"Apple Cider Vinegar","1 Tbsp Apple Cider Vinegar",pdf
+234,22,"Roasted Pork & Broccoli",10,1,Tbsp,"Southern Spice Blend (Onion Powder, Garlic Powder, Ground Yellow Mustard, Smoked Paprika, & Cayenne Pepper)","1 Tbsp Southern Spice Blend (Onion Powder, Garlic Powder, Ground Yellow Mustard, Smoked Paprika, & Cayenne Pepper)",pdf
+235,23,"Roasted Red Pepper Pasta",1,½,lb,Broccoli,"½ lb Broccoli",ai
+236,23,"Roasted Red Pepper Pasta",2,1,,Lemon,"1 Lemon",ai
+237,23,"Roasted Red Pepper Pasta",3,2,cloves,Garlic,"2 cloves Garlic",ai
+238,23,"Roasted Red Pepper Pasta",4,1,Tbsp,Capers,"1 Tbsp Capers",ai
+239,23,"Roasted Red Pepper Pasta",5,1,Tbsp,"Tomato Paste","1 Tbsp Tomato Paste",ai
+240,23,"Roasted Red Pepper Pasta",6,¼,cup,"Heavy Cream","¼ cup Heavy Cream",ai
+241,23,"Roasted Red Pepper Pasta",7,1,Tbsp,Butter,"1 Tbsp Butter",ai
+242,23,"Roasted Red Pepper Pasta",8,6,oz,"Whole Grain Pipe Rigate Pasta","6 oz Whole Grain Pipe Rigate Pasta",pdf
+243,23,"Roasted Red Pepper Pasta",9,2,oz,"Roasted Piquillo Peppers","2 oz Roasted Piquillo Peppers",pdf
+244,23,"Roasted Red Pepper Pasta",10,2,Tbsps,"Grated Parmesan Cheese","2 Tbsps Grated Parmesan Cheese",pdf
+245,23,"Roasted Red Pepper Pasta",11,2,Tbsps,"Sliced Roasted Almonds","2 Tbsps Sliced Roasted Almonds",pdf
+246,23,"Roasted Red Pepper Pasta",12,1½,tsps,"Calabrian Chile Paste","1½ tsps Calabrian Chile Paste",pdf
+247,24,"Roasted Squash Curry",1,1,,"Spaghetti Squash","1 Spaghetti Squash",ai
+248,24,"Roasted Squash Curry",2,1,,"Lime Leaf","1 Lime Leaf",ai
+249,24,"Roasted Squash Curry",3,½,cup,"Jasmine Rice","½ cup Jasmine Rice",pdf
+250,24,"Roasted Squash Curry",4,1¾,cups,"Light Coconut Milk","1¾ cups Light Coconut Milk",pdf
+251,24,"Roasted Squash Curry",5,1,,Lime,"1 Lime",pdf
+252,24,"Roasted Squash Curry",6,1,,"Yellow Onion","1 Yellow Onion",pdf
+253,24,"Roasted Squash Curry",7,1,bunch,Mint,"1 bunch Mint",pdf
+254,24,"Roasted Squash Curry",8,2,Tbsps,"Dried Mung Beans","2 Tbsps Dried Mung Beans",pdf
+255,24,"Roasted Squash Curry",9,1½,Tbsps,"Yellow Curry Paste","1½ Tbsps Yellow Curry Paste",pdf
+256,24,"Roasted Squash Curry",10,1,,"1-Inch Piece Ginger","1 1-Inch Piece Ginger",pdf
+257,24,"Roasted Squash Curry",11,1,Tbsp,Sugar,"1 Tbsp Sugar",pdf
+258,24,"Roasted Squash Curry",12,½,lb,"Baby Bok Choy","½ lb Baby Bok Choy",pdf
+259,25,"Roasted Turkey Breast & Farro-Endive Salad",1,1,,"Turkey Breast Roast","1 Turkey Breast Roast",pdf
+260,25,"Roasted Turkey Breast & Farro-Endive Salad",2,⅔,cup,"Semi-Pearled Farro","⅔ cup Semi-Pearled Farro",pdf
+261,25,"Roasted Turkey Breast & Farro-Endive Salad",3,1,,Apple,"1 Apple",pdf
+262,25,"Roasted Turkey Breast & Farro-Endive Salad",4,1,,Lemon,"1 Lemon",pdf
+263,25,"Roasted Turkey Breast & Farro-Endive Salad",5,1,,Endive,"1 Endive",pdf
+264,25,"Roasted Turkey Breast & Farro-Endive Salad",6,1,bunch,Chives,"1 bunch Chives",pdf
+265,25,"Roasted Turkey Breast & Farro-Endive Salad",7,2,Tbsps,Butter,"2 Tbsps Butter",pdf
+266,25,"Roasted Turkey Breast & Farro-Endive Salad",8,1,,Shallot,"1 Shallot",pdf
+267,25,"Roasted Turkey Breast & Farro-Endive Salad",9,1,Tbsp,Honey,"1 Tbsp Honey",pdf
+268,25,"Roasted Turkey Breast & Farro-Endive Salad",10,1,Tbsp,"Whole Grain Dijon Mustard","1 Tbsp Whole Grain Dijon Mustard",pdf
+269,26,"Salmon & Honey-Glazed Carrots",1,1,bunch,Mint,"1 bunch Mint",ai
+270,26,"Salmon & Honey-Glazed Carrots",2,2,,"Skin-On Salmon Fillets","2 Skin-On Salmon Fillets",pdf
+271,26,"Salmon & Honey-Glazed Carrots",3,2,cloves,Garlic,"2 cloves Garlic",pdf
+272,26,"Salmon & Honey-Glazed Carrots",4,6,oz,Carrots,"6 oz Carrots",pdf
+273,26,"Salmon & Honey-Glazed Carrots",5,1,,Lemon,"1 Lemon",pdf
+274,26,"Salmon & Honey-Glazed Carrots",6,¾,lb,"Yukon Gold Potatoes","¾ lb Yukon Gold Potatoes",pdf
+275,26,"Salmon & Honey-Glazed Carrots",7,1,pinch,Saffron,"1 Pinch Saffron",pdf
+276,26,"Salmon & Honey-Glazed Carrots",8,1,Tbsp,Honey,"1 Tbsp Honey",pdf
+277,26,"Salmon & Honey-Glazed Carrots",9,½,cup,"Plain Greek Yogurt","½ cup Plain Greek Yogurt",pdf
+278,26,"Salmon & Honey-Glazed Carrots",10,½,tsp,"Crushed Aleppo Pepper","½ tsp Crushed Aleppo Pepper",pdf
+279,26,"Salmon & Honey-Glazed Carrots",11,½,tsp,"Ground Cumin","½ tsp Ground Cumin",pdf
+280,27,"Seared Chicken & Mashed Potatoes",1,½,lb,Carrots,"½ lb Carrots",ai
+281,27,"Seared Chicken & Mashed Potatoes",2,2,Tbsps,"Maple Syrup","2 Tbsps Maple Syrup",ai
+282,27,"Seared Chicken & Mashed Potatoes",3,1,Tbsp,Butter,"1 Tbsp Butter",ai
+283,27,"Seared Chicken & Mashed Potatoes",4,2,,"Boneless, Skinless Chicken Breasts","2 Boneless, Skinless Chicken Breasts",pdf
+284,27,"Seared Chicken & Mashed Potatoes",5,¾,lb,"Yukon Gold Potatoes","¾ lb Yukon Gold Potatoes",pdf
+285,27,"Seared Chicken & Mashed Potatoes",6,2,Tbsps,"Crème Fraîche","2 Tbsps Crème Fraîche",pdf
+286,27,"Seared Chicken & Mashed Potatoes",7,1,Tbsp,"Sherry Vinegar","1 Tbsp Sherry Vinegar",pdf
+287,28,"Seared Steaks & Garlic Butter",1,2,,"Strip Steaks","2 Strip Steaks",ai
+288,28,"Seared Steaks & Garlic Butter",2,1,head,"Butter Lettuce","1 head Butter Lettuce",ai
+289,28,"Seared Steaks & Garlic Butter",3,2,cloves,Garlic,"2 cloves Garlic",pdf
+290,28,"Seared Steaks & Garlic Butter",4,2,,"Russet Potatoes","2 Russet Potatoes",pdf
+291,28,"Seared Steaks & Garlic Butter",5,1,bunch,Chives,"1 bunch Chives",pdf
+292,28,"Seared Steaks & Garlic Butter",6,3,Tbsps,"Creamy Mustard Sauce","3 Tbsps Creamy Mustard Sauce",pdf
+293,28,"Seared Steaks & Garlic Butter",7,2,Tbsps,Butter,"2 Tbsps Butter",pdf
+294,28,"Seared Steaks & Garlic Butter",8,1,Tbsp,"Red Wine Vinegar","1 Tbsp Red Wine Vinegar",pdf
+295,29,"Shiitake & Hoisin Beef Burgers",1,1¼,lbs,"Ground Beef","1¼ lbs Ground Beef",ai
+296,29,"Shiitake & Hoisin Beef Burgers",2,4,,"Potato Buns","4 Potato Buns",pdf
+297,29,"Shiitake & Hoisin Beef Burgers",3,2,cloves,Garlic,"2 cloves Garlic",pdf
+298,29,"Shiitake & Hoisin Beef Burgers",4,2,,Scallions,"2 Scallions",pdf
+299,29,"Shiitake & Hoisin Beef Burgers",5,2,,"Sweet Potatoes","2 Sweet Potatoes",pdf
+300,29,"Shiitake & Hoisin Beef Burgers",6,½,lb,"Baby Bok Choy","½ lb Baby Bok Choy",pdf
+301,29,"Shiitake & Hoisin Beef Burgers",7,2,Tbsps,"Hoisin Sauce","2 Tbsps Hoisin Sauce",pdf
+302,29,"Shiitake & Hoisin Beef Burgers",8,2,Tbsps,"Sweet White Miso Paste","2 Tbsps Sweet White Miso Paste",pdf
+303,29,"Shiitake & Hoisin Beef Burgers",9,½,oz,"Dried Shiitake Mushrooms","½ oz Dried Shiitake Mushrooms",pdf
+304,29,"Shiitake & Hoisin Beef Burgers",10,¼,cup,Mayonnaise,"¼ cup Mayonnaise",pdf
+305,30,"Shrimp Fra Diavolo",1,10,oz,"Peeled & Deveined Shrimp","10 oz Peeled & Deveined Shrimp",ai
+306,30,"Shrimp Fra Diavolo",2,½,lb,"Green Cabbage","½ lb Green Cabbage",ai
+307,30,"Shrimp Fra Diavolo",3,6,oz,"Lumaca Rigata Pasta","6 oz Lumaca Rigata Pasta",pdf
+308,30,"Shrimp Fra Diavolo",4,2,cloves,Garlic,"2 cloves Garlic",pdf
+309,30,"Shrimp Fra Diavolo",5,1,,"8-Ounce Can Tomato Sauce","1 8-Ounce Can Tomato Sauce",pdf
+310,30,"Shrimp Fra Diavolo",6,1½,tsps,"Calabrian Chile Paste","1½ tsps Calabrian Chile Paste",pdf
+311,30,"Shrimp Fra Diavolo",7,2,Tbsps,"Crème Fraîche","2 Tbsps Crème Fraîche",pdf
+312,30,"Shrimp Fra Diavolo",8,2,Tbsps,"Sliced Roasted Almonds","2 Tbsps Sliced Roasted Almonds",pdf
+313,30,"Shrimp Fra Diavolo",9,2,Tbsps,"Verjus Blanc","2 Tbsps Verjus Blanc",pdf
+314,31,"Smoked Gouda & Mushroom Flatbread",1,1,bunch,Kale,"1 bunch Kale",ai
+315,31,"Smoked Gouda & Mushroom Flatbread",2,1,,Endive,"1 Endive",pdf
+316,31,"Smoked Gouda & Mushroom Flatbread",3,2,cloves,Garlic,"2 cloves Garlic",pdf
+317,31,"Smoked Gouda & Mushroom Flatbread",4,2,oz,"Smoked Gouda Cheese","2 oz Smoked Gouda Cheese",pdf
+318,31,"Smoked Gouda & Mushroom Flatbread",5,2,oz,"Fontina Or Aged Alpine Cheese","2 oz Fontina Or Aged Alpine Cheese",pdf
+319,31,"Smoked Gouda & Mushroom Flatbread",6,1,,"Red Onion","1 Red Onion",pdf
+320,31,"Smoked Gouda & Mushroom Flatbread",7,¾,lb,"Pizza Dough","¾ lb Pizza Dough",pdf
+321,31,"Smoked Gouda & Mushroom Flatbread",8,4,oz,"Cremini Mushrooms","4 oz Cremini Mushrooms",pdf
+322,31,"Smoked Gouda & Mushroom Flatbread",9,1,,Apple,"1 Apple",pdf
+323,31,"Smoked Gouda & Mushroom Flatbread",10,1,Tbsp,Honey,"1 Tbsp Honey",pdf
+324,31,"Smoked Gouda & Mushroom Flatbread",11,1,Tbsp,"Apple Cider Vinegar","1 Tbsp Apple Cider Vinegar",pdf
+325,32,"Spicy Chicken Quesadillas",1,2,,"Boneless, Skinless Chicken Breasts","2 Boneless, Skinless Chicken Breasts",ai
+326,32,"Spicy Chicken Quesadillas",2,4,,"Flour Tortillas","4 Flour Tortillas",pdf
+327,32,"Spicy Chicken Quesadillas",3,2,,Scallions,"2 Scallions",pdf
+328,32,"Spicy Chicken Quesadillas",4,6,oz,"Chioggia Beet","6 oz Chioggia Beet",pdf
+329,32,"Spicy Chicken Quesadillas",5,1,,"Jalapeño Pepper","1 Jalapeño Pepper",pdf
+330,32,"Spicy Chicken Quesadillas",6,1,,Lime,"1 Lime",pdf
+331,32,"Spicy Chicken Quesadillas",7,1,,"Navel Orange","1 Navel Orange",pdf
+332,32,"Spicy Chicken Quesadillas",8,3,Tbsps,"Roasted Peanuts","3 Tbsps Roasted Peanuts",pdf
+333,32,"Spicy Chicken Quesadillas",9,2,oz,"White Cheddar Cheese","2 oz White Cheddar Cheese",pdf
+334,32,"Spicy Chicken Quesadillas",10,¼,cup,"Mexican Crema","¼ cup Mexican Crema",pdf
+335,32,"Spicy Chicken Quesadillas",11,1,Tbsp,"Mexican Spice Blend (Ancho Chile Powder, Smoked Paprika, Garlic Powder, Ground Cumin, & Dried Mexican Oregano)","1 Tbsp Mexican Spice Blend (Ancho Chile Powder, Smoked Paprika, Garlic Powder, Ground Cumin, & Dried Mexican Oregano)",pdf
+336,33,"Spicy Pork & Korean Rice Cakes",1,1,lb,"Ground Pork","1 lb Ground Pork",ai
+337,33,"Spicy Pork & Korean Rice Cakes",2,1,lb,"Korean Rice Cakes","1 lb Korean Rice Cakes",pdf
+338,33,"Spicy Pork & Korean Rice Cakes",3,2,cloves,Garlic,"2 cloves Garlic",pdf
+339,33,"Spicy Pork & Korean Rice Cakes",4,2,heads,"Baby Bok Choy","2 heads Baby Bok Choy",pdf
+340,33,"Spicy Pork & Korean Rice Cakes",5,2,Tbsps,"Soy Glaze","2 Tbsps Soy Glaze",pdf
+341,33,"Spicy Pork & Korean Rice Cakes",6,1½,Tbsps,Gochujang,"1½ Tbsps Gochujang",pdf
+342,33,"Spicy Pork & Korean Rice Cakes",7,1,,"1-Inch Piece Ginger","1 1-Inch Piece Ginger",pdf
+343,33,"Spicy Pork & Korean Rice Cakes",8,¼,cup,"Black Bean Sauce","¼ cup Black Bean Sauce",pdf
+344,33,"Spicy Pork & Korean Rice Cakes",9,¼,cup,"Crème Fraîche","¼ cup Crème Fraîche",pdf
+345,33,"Spicy Pork & Korean Rice Cakes",10,1,bunch,Chives,"1 bunch Chives",pdf
+346,34,"Sweet & Sour Vegetable Stir-Fry",1,¾,cup,"Jasmine Rice","¾ cup Jasmine Rice",ai
+347,34,"Sweet & Sour Vegetable Stir-Fry",2,2,,Carrots,"2 Carrots",ai
+348,34,"Sweet & Sour Vegetable Stir-Fry",3,2,stalks,Celery,"2 stalks Celery",ai
+349,34,"Sweet & Sour Vegetable Stir-Fry",4,1,head,"Baby Bok Choy","1 head Baby Bok Choy",ai
+350,34,"Sweet & Sour Vegetable Stir-Fry",5,1,,Orange,"1 Orange",ai
+351,34,"Sweet & Sour Vegetable Stir-Fry",6,1,,Lemon,"1 Lemon",ai
+352,34,"Sweet & Sour Vegetable Stir-Fry",7,2,cloves,Garlic,"2 cloves Garlic",ai
+353,34,"Sweet & Sour Vegetable Stir-Fry",8,3,oz,Radishes,"3 oz Radishes",ai
+354,34,"Sweet & Sour Vegetable Stir-Fry",9,1,Tbsp,"Sesame Oil","1 Tbsp Sesame Oil",ai
+355,34,"Sweet & Sour Vegetable Stir-Fry",10,2,Tbsps,"Soy Glaze","2 Tbsps Soy Glaze",ai
+356,34,"Sweet & Sour Vegetable Stir-Fry",11,2,,"Cage-Free Farm Eggs","2 Cage-Free Farm Eggs",pdf
+357,34,"Sweet & Sour Vegetable Stir-Fry",12,1,,"1-Inch Piece Ginger","1 1-Inch Piece Ginger",pdf
+358,34,"Sweet & Sour Vegetable Stir-Fry",13,1½,Tbsps,"Soy Marinade","1½ Tbsps Soy Marinade",pdf
+359,34,"Sweet & Sour Vegetable Stir-Fry",14,2,Tbsps,"Roasted Peanuts","2 Tbsps Roasted Peanuts",pdf
+360,35,"Thai Curry Chicken",1,¾,cup,"Jasmine Rice","¾ cup Jasmine Rice",ai
+361,35,"Thai Curry Chicken",2,10,oz,"Chopped Chicken Breast","10 oz Chopped Chicken Breast",pdf
+362,35,"Thai Curry Chicken",3,1¾,cups,"Light Coconut Milk","1¾ cups Light Coconut Milk",pdf
+363,35,"Thai Curry Chicken",4,3,,Carrots,"3 Carrots",pdf
+364,35,"Thai Curry Chicken",5,1,,Lime,"1 Lime",pdf
+365,35,"Thai Curry Chicken",6,1,head,"Baby Bok Choy","1 head Baby Bok Choy",pdf
+366,35,"Thai Curry Chicken",7,½,cup,"Dried Shiitake Mushrooms","½ cup Dried Shiitake Mushrooms",pdf
+367,35,"Thai Curry Chicken",8,2,tsps,"Golden Mountain Sauce","2 tsps Golden Mountain Sauce",pdf
+368,35,"Thai Curry Chicken",9,1½,Tbsps,"Yellow Curry Paste","1½ Tbsps Yellow Curry Paste",pdf
+369,36,"Tilapia & Black Lentil Salad",1,2,,"Tilapia Fillets","2 Tilapia Fillets",ai
+370,36,"Tilapia & Black Lentil Salad",2,½,cup,"Black Beluga Lentils","½ cup Black Beluga Lentils",pdf
+371,36,"Tilapia & Black Lentil Salad",3,2,cloves,Garlic,"2 cloves Garlic",pdf
+372,36,"Tilapia & Black Lentil Salad",4,1,,Lemon,"1 Lemon",pdf
+373,36,"Tilapia & Black Lentil Salad",5,½,lb,Broccoli,"½ lb Broccoli",pdf
+374,36,"Tilapia & Black Lentil Salad",6,1,bunch,Parsley,"1 bunch Parsley",pdf
+375,36,"Tilapia & Black Lentil Salad",7,2,Tbsps,Butter,"2 Tbsps Butter",pdf
+376,36,"Tilapia & Black Lentil Salad",8,1,oz,"Golden Or Red Sweet Piquante Peppers","1 oz Golden Or Red Sweet Piquante Peppers",pdf
+377,36,"Tilapia & Black Lentil Salad",9,1,Tbsp,Capers,"1 Tbsp Capers",pdf
+378,37,"Togarashi Chicken Lettuce Cups",1,10,oz,"Ground Chicken","10 oz Ground Chicken",ai
+379,37,"Togarashi Chicken Lettuce Cups",2,1,head,"Butter Lettuce","1 head Butter Lettuce",ai
+380,37,"Togarashi Chicken Lettuce Cups",3,1,,"Navel Orange","1 Navel Orange",ai
+381,37,"Togarashi Chicken Lettuce Cups",4,3,oz,Radishes,"3 oz Radishes",ai
+382,37,"Togarashi Chicken Lettuce Cups",5,2,,Scallions,"2 Scallions",ai
+383,37,"Togarashi Chicken Lettuce Cups",6,1,,"1-Inch Piece Ginger","1 1-Inch Piece Ginger",ai
+384,37,"Togarashi Chicken Lettuce Cups",7,2,cloves,Garlic,"2 cloves Garlic",ai
+385,37,"Togarashi Chicken Lettuce Cups",8,2,Tbsps,"Coconut Aminos","2 Tbsps Coconut Aminos",ai
+386,37,"Togarashi Chicken Lettuce Cups",9,1,Tbsp,"Rice Vinegar","1 Tbsp Rice Vinegar",ai
+387,37,"Togarashi Chicken Lettuce Cups",10,2,Tbsps,"Roasted Cashews","2 Tbsps Roasted Cashews",ai
+388,37,"Togarashi Chicken Lettuce Cups",11,1,tsp,"Togarashi Seasoning (Chile Pepper, Orange Peel, Sesame Seeds, Ginger, & Seaweed)","1 tsp Togarashi Seasoning (Chile Pepper, Orange Peel, Sesame Seeds, Ginger, & Seaweed)",ai
+389,37,"Togarashi Chicken Lettuce Cups",12,4,oz,"Cremini Mushrooms","4 oz Cremini Mushrooms",ai
+390,37,"Togarashi Chicken Lettuce Cups",13,1,,"Red Onion","1 Red Onion",ai
+391,37,"Togarashi Chicken Lettuce Cups",14,1,,Carrot,"1 Carrot",ai
+392,37,"Togarashi Chicken Lettuce Cups",15,1,,Lime,"1 Lime",ai
+393,38,"Top Chef Ginger-Marinated Grassfed Steaks",1,2,,"Grassfed Strip Steaks","2 Grassfed Strip Steaks",ai
+394,38,"Top Chef Ginger-Marinated Grassfed Steaks",2,¾,cup,"Jasmine Rice","¾ cup Jasmine Rice",ai
+395,38,"Top Chef Ginger-Marinated Grassfed Steaks",3,1,,"1-Inch Piece Ginger","1 1-Inch Piece Ginger",ai
+396,38,"Top Chef Ginger-Marinated Grassfed Steaks",4,2,cloves,Garlic,"2 cloves Garlic",ai
+397,38,"Top Chef Ginger-Marinated Grassfed Steaks",5,2,Tbsps,"Ponzu Sauce","2 Tbsps Ponzu Sauce",ai
+398,38,"Top Chef Ginger-Marinated Grassfed Steaks",6,2,Tbsps,"Soy Sauce","2 Tbsps Soy Sauce",ai
+399,38,"Top Chef Ginger-Marinated Grassfed Steaks",7,1,tsp,Sugar,"1 tsp Sugar",ai
+400,38,"Top Chef Ginger-Marinated Grassfed Steaks",8,4,oz,"Snow Peas","4 oz Snow Peas",ai
+401,38,"Top Chef Ginger-Marinated Grassfed Steaks",9,2,,Carrots,"2 Carrots",ai
+402,38,"Top Chef Ginger-Marinated Grassfed Steaks",10,1,head,"Baby Bok Choy","1 head Baby Bok Choy",ai
+403,38,"Top Chef Ginger-Marinated Grassfed Steaks",11,2,,Scallions,"2 Scallions",ai
+404,38,"Top Chef Ginger-Marinated Grassfed Steaks",12,1,Tbsp,Butter,"1 Tbsp Butter",ai
+405,39,"Top Chef Seared Grassfed Steaks",1,¾,cup,"Jasmine Rice","¾ cup Jasmine Rice",ai
+406,39,"Top Chef Seared Grassfed Steaks",2,1,,Shallot,"1 Shallot",ai
+407,39,"Top Chef Seared Grassfed Steaks",3,2,heads,"Baby Bok Choy","2 heads Baby Bok Choy",ai
+408,39,"Top Chef Seared Grassfed Steaks",4,1,,Lime,"1 Lime",ai
+409,39,"Top Chef Seared Grassfed Steaks",5,6,oz,Radishes,"6 oz Radishes",ai
+410,39,"Top Chef Seared Grassfed Steaks",6,2,Tbsps,"Ponzu Sauce","2 Tbsps Ponzu Sauce",ai
+411,39,"Top Chef Seared Grassfed Steaks",7,1,Tbsp,"Soy Marinade","1 Tbsp Soy Marinade",ai
+412,39,"Top Chef Seared Grassfed Steaks",8,1,Tbsp,Sugar,"1 Tbsp Sugar",ai
+413,39,"Top Chef Seared Grassfed Steaks",9,2,,"Grassfed Strip Steaks","2 Grassfed Strip Steaks",pdf
+414,39,"Top Chef Seared Grassfed Steaks",10,4,oz,"Cremini Mushrooms","4 oz Cremini Mushrooms",pdf
+415,39,"Top Chef Seared Grassfed Steaks",11,1,,"1-Inch Piece Ginger","1 1-Inch Piece Ginger",pdf
+416,39,"Top Chef Seared Grassfed Steaks",12,2,Tbsps,"Sweet Chili Sauce","2 Tbsps Sweet Chili Sauce",pdf
+417,40,"Tuscan Chicken & Green Lentil Stew",1,2,,"Boneless, Skinless Chicken Breasts","2 Boneless, Skinless Chicken Breasts",pdf
+418,40,"Tuscan Chicken & Green Lentil Stew",2,2,,Carrots,"2 Carrots",pdf
+419,40,"Tuscan Chicken & Green Lentil Stew",3,1,,"Red Onion","1 Red Onion",pdf
+420,40,"Tuscan Chicken & Green Lentil Stew",4,2,cloves,Garlic,"2 cloves Garlic",pdf
+421,40,"Tuscan Chicken & Green Lentil Stew",5,½,cup,"French Green Lentils","½ cup French Green Lentils",pdf
+422,40,"Tuscan Chicken & Green Lentil Stew",6,1,bunch,"Collard Greens","1 bunch Collard Greens",pdf
+423,40,"Tuscan Chicken & Green Lentil Stew",7,2,Tbsps,"Tomato Paste","2 Tbsps Tomato Paste",pdf
+424,40,"Tuscan Chicken & Green Lentil Stew",8,¼,tsp,"Crushed Red Pepper Flakes","¼ tsp Crushed Red Pepper Flakes",pdf
+425,40,"Tuscan Chicken & Green Lentil Stew",9,1,Tbsp,Capers,"1 Tbsp Capers",pdf
+426,40,"Tuscan Chicken & Green Lentil Stew",10,1,Tbsp,"Apple Cider Vinegar","1 Tbsp Apple Cider Vinegar",pdf
+427,40,"Tuscan Chicken & Green Lentil Stew",11,2,Tbsps,"Crumbled Goat Cheese","2 Tbsps Crumbled Goat Cheese",pdf
+,41,"fetty wap",1,,,,"17 trap queens",user
+,41,"fetty wap",2,,,,"38 pies",user

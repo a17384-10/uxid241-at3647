@@ -171,8 +171,10 @@ if (!empty($search)) {
         <div class="user-nav">
             <?php if (isset($_SESSION['user_id'])): ?>
                 <span>Welcome, <strong><?= htmlspecialchars($_SESSION['username'] ?? 'Admin') ?></strong></span>
+                <a href="../case-study.html" class="btn-secondary" style="text-decoration: none;">📖 Case Study</a>
                 <a href="logout.php" class="btn-secondary" style="text-decoration: none;">🔒 Log Out</a>
             <?php else: ?>
+                <a href="../case-study.html" class="btn-secondary" style="text-decoration: none;">📖 Case Study</a>
                 <a href="login.php" class="btn" style="text-decoration: none;">🔑 Log In</a>
             <?php endif; ?>
         </div>
