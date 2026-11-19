@@ -22,16 +22,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $steps_input = trim($_POST['steps_list'] ?? '');
     $image_path = '';
 
-    // Handle Secure Image Upload
+    // handles secure imapge upload
     if (isset($_FILES['recipe_image']) && $_FILES['recipe_image']['error'] === UPLOAD_ERR_OK) {
         $file_tmp = $_FILES['recipe_image']['tmp_name'];
         $file_size = $_FILES['recipe_image']['size'];
 
-        // Limit file size to 5MB
+        // limits file size to 5MB
         if ($file_size > 5 * 1024 * 1024) {
             $message = "⚠️ File is too large. Maximum size is 5MB.";
         } else {
-            // Validate real MIME type using finfo (never trust client MIME type or name)
+            // validates real MIME type using finfo
             $finfo = finfo_open(FILEINFO_MIME_TYPE);
             $mime_type = finfo_file($finfo, $file_tmp);
             finfo_close($finfo);
@@ -46,12 +46,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                 $ext = $allowed_mimes[$mime_type];
                 $upload_dir = __DIR__ . '/uploads/';
                 
-                // Ensure upload directory exists securely
+                // ensures upload directory exists securely
                 if (!is_dir($upload_dir)) {
                     mkdir($upload_dir, 0755, true);
                 }
 
-                // Generate unique filename to prevent collisions and path traversal
+                // generates unique filename to prevent collisions and path traversal
                 $new_filename = uniqid('recipe_', true) . '.' . $ext;
                 $destination = $upload_dir . $new_filename;
 
@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     }
 
     if (empty($message) && !empty($title) && !empty($category) && !empty($description) && !empty($ingredients_input) && !empty($steps_input) && $servings > 0) {
-        // Uploads everything to the database using prepared statements
+        // uploads everything to the database using prepared statements
         $stmt = mysqli_prepare($db, "INSERT INTO recipes (title, subtitle, category, servings, description, image) VALUES (?, ?, ?, ?, ?, ?)");
         mysqli_stmt_bind_param($stmt, "sssiss", $title, $subtitle, $category, $servings, $description, $image_path);
         
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             $new_recipe_id = mysqli_insert_id($db);
             mysqli_stmt_close($stmt);
 
-            // Directs to the correct CSV file for ingredients
+            // leads to the correct CSV file for ingredients
             $ing_file = __DIR__ . '/../data/recipes_data_ver8.xlsx - ingredients.csv';
             if (!file_exists($ing_file)) {
                 $ing_file = 'recipes_data_ver8.xlsx - ingredients.csv';
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             }
             fclose($fp);
 
-            // Steps CSV handling
+            // steps csv handling
             $step_file = __DIR__ . '/../data/recipes_data_ver8.xlsx - steps.csv';
             if (!file_exists($step_file)) {
                 $step_file = 'recipes_data_ver8.xlsx - steps.csv';
